@@ -1,0 +1,19 @@
+<mat-card>
+    <mat-card-title>Nova Analise</mat-card-title>
+    <form>
+
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="analise.descricao" name="descricao">
+        </mat-form-field>
+
+    </form>
+
+    <button mat-raised-button (click)="createAnalise()" color="primary">
+        Salvar
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+
+</mat-card>

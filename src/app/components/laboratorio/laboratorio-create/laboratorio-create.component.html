@@ -1,0 +1,23 @@
+<mat-card>
+    <mat-card-title>Novo Laboratório</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="CNPJ" [(ngModel)]="laboratorio.cnpj" name="cnpj">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Endereço" [(ngModel)]="laboratorio.endereco" name="endereco">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Telefone" [(ngModel)]="laboratorio.telefone" name="telefone">
+        </mat-form-field>
+    </form>
+
+    <button mat-raised-button (click)="createLaboratorio()" color="primary">
+        Salvar
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+
+</mat-card>

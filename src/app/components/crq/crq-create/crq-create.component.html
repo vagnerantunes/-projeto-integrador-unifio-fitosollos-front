@@ -1,0 +1,18 @@
+<mat-card>
+    <mat-card-title>Nova CRQ</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="descricao" [(ngModel)]="crq.descricao" name="descricao">
+        </mat-form-field>
+
+    </form>
+
+    <button mat-raised-button (click)="createCrq()" color="primary">
+        Salvar
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+
+</mat-card>

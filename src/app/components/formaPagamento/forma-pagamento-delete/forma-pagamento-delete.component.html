@@ -1,0 +1,18 @@
+<mat-card>
+    <mat-card-title>Excluir Forma de pagamento</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [value]="pagamento.descricao" name="descricao" disabled>
+        </mat-form-field>
+
+    </form>
+
+    <button mat-raised-button (click)="deletePagamento()" color="warn">
+        Excluir
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+
+</mat-card>

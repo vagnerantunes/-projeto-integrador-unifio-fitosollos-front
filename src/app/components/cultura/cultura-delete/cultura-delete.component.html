@@ -1,0 +1,18 @@
+<mat-card>
+    <mat-card-title>Excluir Cultura</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [value]="cultura.descricao" name="descricao" disabled>
+        </mat-form-field>
+
+    </form>
+
+    <button mat-raised-button (click)="deleteCultura()" color="warn">
+        Excluir
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+
+</mat-card>

@@ -1,0 +1,65 @@
+<mat-sidenav-container class="container">
+    <mat-sidenav class="sidenav" mode="side" opened fixedInViewport="true" fixedTopGap="64">
+        <mat-nav-list class="nav-list">
+            <a mat-list-item routerLink="/">
+                <i class="material-icons">
+                    home
+                </i>
+                Início
+            </a>
+            <a mat-list-item routerLink="/usuarios">
+                <i class="material-icons">
+                    people
+                </i>
+                Usuários
+            </a>
+            <a mat-list-item routerLink="/proprietarios">
+                <i class="material-icons">
+                    person
+                </i>
+                Proprietário
+            </a>
+            <a mat-list-item routerLink="/crqs">
+                <i class="material-icons">
+                    description
+                </i>
+                CRQ
+            </a>
+            <a mat-list-item routerLink="/culturas">
+                <i class="material-icons">
+                    agriculture
+                </i>
+                Cultura
+            </a>
+            <a mat-list-item routerLink="/pagamentos">
+                <i class="material-icons">
+                    paid
+                </i>
+                Forma de pagamento
+            </a>
+            <a mat-list-item routerLink="/laboratorios">
+                <i class="material-icons">
+                    science
+                </i>
+                Laboratório
+            </a>
+            <a mat-list-item routerLink="/nematoides">
+                <i class="material-icons">
+                   gesture
+                </i>
+                Nematoides
+            </a>
+            <a mat-list-item routerLink="/analises">
+                <i class="material-icons">
+                    analytics
+                </i>
+                Tipo de análises
+            </a>
+
+        </mat-nav-list>
+    </mat-sidenav>    
+    <mat-sidenav-content class="content">
+        <!-- usamos para começar a trabalhar com a navegação a partir do clique... -->
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

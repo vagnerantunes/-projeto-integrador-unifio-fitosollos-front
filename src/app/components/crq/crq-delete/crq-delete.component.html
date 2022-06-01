@@ -1,0 +1,18 @@
+<mat-card>
+    <mat-card-title>Excluir CRQ</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [value]="crq.descricao" name="name" disabled>
+        </mat-form-field>
+ 
+    </form>
+
+    <button mat-raised-button (click)="deleteCrq()" color="warn">
+        Excluir
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+
+</mat-card>
