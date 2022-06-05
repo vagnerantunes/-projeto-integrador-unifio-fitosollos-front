@@ -47,6 +47,14 @@ import { NematoideDeleteComponent } from './components/nematoide/nematoide-delet
 //Tipo de analises
 import { TipoAnaliseCrudComponent } from './views/tipo-analise-crud/tipo-analise-crud.component';
 import { AnaliseCreateComponent } from './components/analise/analise-create/analise-create.component';
+import { AnaliseUpdateComponent } from './components/analise/analise-update/analise-update.component';
+import { AnaliseDeleteComponent } from './components/analise/analise-delete/analise-delete.component';
+
+//Tabela de preços
+import { PrecosCrudComponent } from './views/precos-crud/precos-crud.component';
+import { PrecosCreateComponent } from './components/precos/precos-create/precos-create.component';
+import { PrecosUpdateComponent } from './components/precos/precos-update/precos-update.component';
+import { PrecosDeleteComponent } from './components/precos/precos-delete/precos-delete.component';
 
 const routes: Routes = [
   {
@@ -172,6 +180,30 @@ const routes: Routes = [
   {
     path: "analises/create",
     component: AnaliseCreateComponent
+  },
+  {
+    path: "analises/update/:id",
+    component: AnaliseUpdateComponent
+  },
+  {
+    path: "analises/delete/:id",
+    component: AnaliseDeleteComponent
+  },
+  {
+    path: "precos",
+    component: PrecosCrudComponent
+  },
+  {
+    path: "precos/create",
+    component: PrecosCreateComponent
+  },
+  {
+    path: "precos/update/:id",
+    component: PrecosUpdateComponent
+  },
+  {
+    path: "precos/delete/:id",
+    component: PrecosDeleteComponent
   }
 ];
 

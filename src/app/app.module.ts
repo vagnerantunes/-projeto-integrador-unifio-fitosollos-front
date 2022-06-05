@@ -60,6 +60,15 @@ import { NematoideUpdateComponent } from './components/nematoide/nematoide-updat
 import { NematoideDeleteComponent } from './components/nematoide/nematoide-delete/nematoide-delete.component';
 import { TipoAnaliseCrudComponent } from './views/tipo-analise-crud/tipo-analise-crud.component';
 import { AnaliseCreateComponent } from './components/analise/analise-create/analise-create.component';
+import { PrecosCrudComponent } from './views/precos-crud/precos-crud.component';
+import { AnaliseReadComponent } from './components/analise/analise-read/analise-read.component';
+import { AnaliseUpdateComponent } from './components/analise/analise-update/analise-update.component';
+import { AnaliseDeleteComponent } from './components/analise/analise-delete/analise-delete.component';
+import { PrecosCreateComponent } from './components/precos/precos-create/precos-create.component';
+import { PrecosReadComponent } from './components/precos/precos-read/precos-read.component';
+import { PrecosUpdateComponent } from './components/precos/precos-update/precos-update.component';
+import { PrecosDeleteComponent } from './components/precos/precos-delete/precos-delete.component';
+
 
 
 @NgModule({
@@ -105,7 +114,15 @@ import { AnaliseCreateComponent } from './components/analise/analise-create/anal
     NematoideUpdateComponent,
     NematoideDeleteComponent,
     TipoAnaliseCrudComponent,
-    AnaliseCreateComponent
+    AnaliseCreateComponent,
+    PrecosCrudComponent,
+    AnaliseReadComponent,
+    AnaliseUpdateComponent,
+    AnaliseDeleteComponent,
+    PrecosCreateComponent,
+    PrecosReadComponent,
+    PrecosUpdateComponent,
+    PrecosDeleteComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,33 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Novo Preço</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+        
+        <form action="">
+            <mat-form-field>
+                <input matInput placeholder="Valor" [(ngModel)]="preco.valor" name="valor" type="number">
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>Tipo de Analise</mat-label>
+                <select matNativeControl required [(ngModel)]="preco.analise" name="analise">
+                  <option *ngFor="let analises of analise" [value]="analises.id">{{analises.descricao}}</option>
+                </select>
+              </mat-form-field>
+
+              <mat-form-field>
+                <mat-label>Laboratório</mat-label>
+                <select matNativeControl required [(ngModel)]="preco.laboratorio" name="laboratorio">
+                  <option *ngFor="let laboratorios of laboratorio" [value]="laboratorios.id">{{laboratorios.cnpj}}</option>
+                </select>
+              </mat-form-field>
+        </form>
+
+        <button appGreen mat-raised-button (click)="createPreco()">Salvar</button>
+        <button appRed mat-raised-button (click)="cancel()">Cancelar</button>
+
+    </mat-card-content>
+    
+</mat-card>
