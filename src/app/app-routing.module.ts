@@ -1,3 +1,5 @@
+import { RecebimentoCreateComponent } from './components/recebimento/recebimento-create/recebimento-create.component';
+import { RecebimentoCrudComponent } from './views/recebimento-crud/recebimento-crud.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './views/home/home.component';
@@ -226,6 +228,14 @@ const routes: Routes = [
   {
     path: "tecnicos/delete/:id",
     component: TecnicoDeleteComponent
+  },
+  {
+    path: "recebimentos",
+    component: RecebimentoCrudComponent
+  },
+  {
+    path: "recebimentos/create",
+    component: RecebimentoCreateComponent
   }
 ];
 

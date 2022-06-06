@@ -73,6 +73,8 @@ import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecn
 import { TecnicoReadComponent } from './components/tecnico/tecnico-read/tecnico-read.component';
 import { TecnicoUpdateComponent } from './components/tecnico/tecnico-update/tecnico-update.component';
 import { TecnicoDeleteComponent } from './components/tecnico/tecnico-delete/tecnico-delete.component';
+import { RecebimentoCrudComponent } from './views/recebimento-crud/recebimento-crud.component';
+import { RecebimentoCreateComponent } from './components/recebimento/recebimento-create/recebimento-create.component';
 
 
 
@@ -132,7 +134,9 @@ import { TecnicoDeleteComponent } from './components/tecnico/tecnico-delete/tecn
     TecnicoCreateComponent,
     TecnicoReadComponent,
     TecnicoUpdateComponent,
-    TecnicoDeleteComponent
+    TecnicoDeleteComponent,
+    RecebimentoCrudComponent,
+    RecebimentoCreateComponent
   ],
   imports: [
     BrowserModule,
