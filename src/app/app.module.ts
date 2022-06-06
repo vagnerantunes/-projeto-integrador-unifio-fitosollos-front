@@ -68,6 +68,11 @@ import { PrecosCreateComponent } from './components/precos/precos-create/precos-
 import { PrecosReadComponent } from './components/precos/precos-read/precos-read.component';
 import { PrecosUpdateComponent } from './components/precos/precos-update/precos-update.component';
 import { PrecosDeleteComponent } from './components/precos/precos-delete/precos-delete.component';
+import { TecnicoCrudComponent } from './views/tecnico-crud/tecnico-crud.component';
+import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecnico-create.component';
+import { TecnicoReadComponent } from './components/tecnico/tecnico-read/tecnico-read.component';
+import { TecnicoUpdateComponent } from './components/tecnico/tecnico-update/tecnico-update.component';
+import { TecnicoDeleteComponent } from './components/tecnico/tecnico-delete/tecnico-delete.component';
 
 
 
@@ -122,7 +127,12 @@ import { PrecosDeleteComponent } from './components/precos/precos-delete/precos-
     PrecosCreateComponent,
     PrecosReadComponent,
     PrecosUpdateComponent,
-    PrecosDeleteComponent
+    PrecosDeleteComponent,
+    TecnicoCrudComponent,
+    TecnicoCreateComponent,
+    TecnicoReadComponent,
+    TecnicoUpdateComponent,
+    TecnicoDeleteComponent
   ],
   imports: [
     BrowserModule,

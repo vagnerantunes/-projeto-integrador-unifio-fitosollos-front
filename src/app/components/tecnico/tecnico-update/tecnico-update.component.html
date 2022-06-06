@@ -1,0 +1,61 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Atualizar Técnico</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+        
+        <form action="">
+            <mat-form-field>
+                <input matInput placeholder="Nome" [(ngModel)]="tecnico.nome" name="nome" type="text">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput placeholder="DDD" [(ngModel)]="tecnico.ddd" name="ddd" type="text">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput placeholder="Telefone" [(ngModel)]="tecnico.telefone" name="telefone" type="text">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput placeholder="Cidade" [(ngModel)]="tecnico.cidade" name="cidade" type="text">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput placeholder="UF" [(ngModel)]="tecnico.uf" name="uf" type="text">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput placeholder="Endereço" [(ngModel)]="tecnico.endereco" name="endereco" type="text">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput placeholder="Bairro" [(ngModel)]="tecnico.bairro" name="bairro" type="text">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput placeholder="CEP" [(ngModel)]="tecnico.cep" name="cep" type="text">
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>CRQ</mat-label>
+                <select matNativeControl required [(ngModel)]="tecnico.crq" name="crq">
+                  <option *ngFor="let crqs of crq" [value]="crqs.id">{{crqs.descricao}}</option>
+                </select>
+              </mat-form-field>
+
+              <mat-form-field>
+                <mat-label>Laboratório</mat-label>
+                <select matNativeControl required [(ngModel)]="tecnico.laboratorio" name="laboratorio">
+                  <option *ngFor="let laboratorios of laboratorio" [value]="laboratorios.id">{{laboratorios.cnpj}}</option>
+                </select>
+              </mat-form-field>
+        </form>
+
+        <button appGreen mat-raised-button (click)="updateTecnico()">Salvar</button>
+        <button appRed mat-raised-button (click)="cancel()">Cancelar</button>
+
+    </mat-card-content>
+    
+</mat-card>

@@ -56,6 +56,12 @@ import { PrecosCreateComponent } from './components/precos/precos-create/precos-
 import { PrecosUpdateComponent } from './components/precos/precos-update/precos-update.component';
 import { PrecosDeleteComponent } from './components/precos/precos-delete/precos-delete.component';
 
+//Tecnicos
+import { TecnicoCrudComponent } from './views/tecnico-crud/tecnico-crud.component';
+import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecnico-create.component';
+import { TecnicoUpdateComponent } from './components/tecnico/tecnico-update/tecnico-update.component';
+import { TecnicoDeleteComponent } from './components/tecnico/tecnico-delete/tecnico-delete.component';
+
 const routes: Routes = [
   {
     path: "",
@@ -204,6 +210,22 @@ const routes: Routes = [
   {
     path: "precos/delete/:id",
     component: PrecosDeleteComponent
+  },
+  {
+    path: "tecnicos",
+    component: TecnicoCrudComponent
+  },
+  {
+    path: "tecnicos/create",
+    component: TecnicoCreateComponent
+  },
+  {
+    path: "tecnicos/update/:id",
+    component: TecnicoUpdateComponent
+  },
+  {
+    path: "tecnicos/delete/:id",
+    component: TecnicoDeleteComponent
   }
 ];
 
