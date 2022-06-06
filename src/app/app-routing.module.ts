@@ -1,5 +1,3 @@
-import { RecebimentoCreateComponent } from './components/recebimento/recebimento-create/recebimento-create.component';
-import { RecebimentoCrudComponent } from './views/recebimento-crud/recebimento-crud.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './views/home/home.component';
@@ -63,6 +61,14 @@ import { TecnicoCrudComponent } from './views/tecnico-crud/tecnico-crud.componen
 import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecnico-create.component';
 import { TecnicoUpdateComponent } from './components/tecnico/tecnico-update/tecnico-update.component';
 import { TecnicoDeleteComponent } from './components/tecnico/tecnico-delete/tecnico-delete.component';
+
+//Recebimento
+import { RecebimentoCreateComponent } from './components/recebimento/recebimento-create/recebimento-create.component';
+import { RecebimentoCrudComponent } from './views/recebimento-crud/recebimento-crud.component';
+
+//Amostra
+import { AmostraCrudComponent } from './views/amostra-crud/amostra-crud.component';
+import { AmostraCreateComponent } from './components/amostra/amostra-create/amostra-create.component';
 
 const routes: Routes = [
   {
@@ -236,6 +242,14 @@ const routes: Routes = [
   {
     path: "recebimentos/create",
     component: RecebimentoCreateComponent
+  },
+  {
+    path: "amostras",
+    component: AmostraCrudComponent
+  },
+  {
+    path: "amostras/create",
+    component: AmostraCreateComponent
   }
 ];
 

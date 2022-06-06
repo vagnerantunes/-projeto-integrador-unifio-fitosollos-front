@@ -75,6 +75,8 @@ import { TecnicoUpdateComponent } from './components/tecnico/tecnico-update/tecn
 import { TecnicoDeleteComponent } from './components/tecnico/tecnico-delete/tecnico-delete.component';
 import { RecebimentoCrudComponent } from './views/recebimento-crud/recebimento-crud.component';
 import { RecebimentoCreateComponent } from './components/recebimento/recebimento-create/recebimento-create.component';
+import { AmostraCrudComponent } from './views/amostra-crud/amostra-crud.component';
+import { AmostraCreateComponent } from './components/amostra/amostra-create/amostra-create.component';
 
 
 
@@ -136,7 +138,9 @@ import { RecebimentoCreateComponent } from './components/recebimento/recebimento
     TecnicoUpdateComponent,
     TecnicoDeleteComponent,
     RecebimentoCrudComponent,
-    RecebimentoCreateComponent
+    RecebimentoCreateComponent,
+    AmostraCrudComponent,
+    AmostraCreateComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,74 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Nova Amostra</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+        
+        <form action="">
+            <mat-form-field>
+                <input matInput placeholder="Descrição" [(ngModel)]="amostra.descricao" name="descricao" type="text">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput placeholder="Chegada" [(ngModel)]="amostra.chegada" name="chegada" type="text">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput placeholder="Saida" [(ngModel)]="amostra.saida" name="saida" type="text">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput placeholder="Peso" [(ngModel)]="amostra.peso" name="peso" type="number">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput placeholder="Finalizada" [(ngModel)]="amostra.finalizida" name="finalizida" type="text">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput placeholder="Cancelada" [(ngModel)]="amostra.cancelada" name="cancelada" type="text">
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>Usuário</mat-label>
+                <select matNativeControl required [(ngModel)]="amostra.usuario" name="usuario">
+                  <option *ngFor="let usuarios of usuario" [value]="usuarios.id">{{usuarios.email}}</option>
+                </select>
+              </mat-form-field>
+
+              <mat-form-field>
+                <mat-label>Tipo de Analise</mat-label>
+                <select matNativeControl required [(ngModel)]="amostra.analise" name="analise">
+                  <option *ngFor="let analises of analise" [value]="analises.id">{{analises.descricao}}</option>
+                </select>
+              </mat-form-field>
+
+              <mat-form-field>
+                <mat-label>Cultura</mat-label>
+                <select matNativeControl required [(ngModel)]="amostra.cultura" name="cultura">
+                  <option *ngFor="let culturas of cultura" [value]="culturas.id">{{culturas.descricao}}</option>
+                </select>
+              </mat-form-field>
+
+              <mat-form-field>
+                <mat-label>Proprietário</mat-label>
+                <select matNativeControl required [(ngModel)]="amostra.proprietario" name="proprietario">
+                  <option *ngFor="let proprietarios of proprietario" [value]="proprietarios.id">{{proprietarios.nome}}</option>
+                </select>
+              </mat-form-field>
+
+              <mat-form-field>
+                <mat-label>Laboratório</mat-label>
+                <select matNativeControl required [(ngModel)]="amostra.laboratorio" name="laboratorio">
+                  <option *ngFor="let laboratorios of laboratorio" [value]="laboratorios.id">{{laboratorios.cnpj}}</option>
+                </select>
+              </mat-form-field>
+        </form>
+
+        <button appGreen mat-raised-button (click)="createAmostra()">Salvar</button>
+        <button appRed mat-raised-button (click)="cancel()">Cancelar</button>
+
+    </mat-card-content>
+    
+</mat-card>
