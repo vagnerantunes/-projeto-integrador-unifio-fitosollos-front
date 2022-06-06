@@ -69,6 +69,7 @@ import { RecebimentoCrudComponent } from './views/recebimento-crud/recebimento-c
 //Amostra
 import { AmostraCrudComponent } from './views/amostra-crud/amostra-crud.component';
 import { AmostraCreateComponent } from './components/amostra/amostra-create/amostra-create.component';
+import { AmostraUpdateComponent } from './components/amostra/amostra-update/amostra-update.component';
 
 const routes: Routes = [
   {
@@ -250,6 +251,10 @@ const routes: Routes = [
   {
     path: "amostras/create",
     component: AmostraCreateComponent
+  },
+  {
+    path: "amostras/update/:id",
+    component: AmostraUpdateComponent
   }
 ];
 

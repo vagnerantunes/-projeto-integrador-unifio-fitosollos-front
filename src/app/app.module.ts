@@ -77,6 +77,8 @@ import { RecebimentoCrudComponent } from './views/recebimento-crud/recebimento-c
 import { RecebimentoCreateComponent } from './components/recebimento/recebimento-create/recebimento-create.component';
 import { AmostraCrudComponent } from './views/amostra-crud/amostra-crud.component';
 import { AmostraCreateComponent } from './components/amostra/amostra-create/amostra-create.component';
+import { AmostraReadComponent } from './components/amostra/amostra-read/amostra-read.component';
+import { AmostraUpdateComponent } from './components/amostra/amostra-update/amostra-update.component';
 
 
 
@@ -140,7 +142,9 @@ import { AmostraCreateComponent } from './components/amostra/amostra-create/amos
     RecebimentoCrudComponent,
     RecebimentoCreateComponent,
     AmostraCrudComponent,
-    AmostraCreateComponent
+    AmostraCreateComponent,
+    AmostraReadComponent,
+    AmostraUpdateComponent
   ],
   imports: [
     BrowserModule,
