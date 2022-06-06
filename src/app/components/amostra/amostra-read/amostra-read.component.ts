@@ -20,5 +20,6 @@ export class AmostraReadComponent implements OnInit {
       console.log(amostras)  
     })
   }
+  
 
 }

@@ -1,7 +1,9 @@
 form{
     display: flex;
     flex-direction: column;
+    
 }
+
 
 button{
     margin-top: 20px;
