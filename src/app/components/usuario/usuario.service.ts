@@ -29,18 +29,18 @@ export class UsuarioService {
     return this.http.get<Usuario[]>(this.baseUrl)
   }
 
-  readById(id: string): Observable<Usuario>{
-    const url = `${this.baseUrl}/${id}`
+  readById(usuId: string): Observable<Usuario>{
+    const url = `${this.baseUrl}/${usuId}`
     return this.http.get<Usuario>(url)
   }
  
   update(usuario: Usuario): Observable<Usuario>{
-    const url = `${this.baseUrl}/${usuario.id}`
+    const url = `${this.baseUrl}/${usuario.usuId}`
     return this.http.put<Usuario>(url, usuario)
   }
   
-  delete(id: number): Observable<Usuario>{    
-    const url = `${this.baseUrl}/${id}`
+  delete(usuId: number): Observable<Usuario>{    
+    const url = `${this.baseUrl}/${usuId}`
     return this.http.delete<Usuario>(url)
   }
 

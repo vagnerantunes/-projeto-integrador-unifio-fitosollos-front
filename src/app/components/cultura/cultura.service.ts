@@ -29,18 +29,18 @@ export class CulturaService {
     return this.http.get<Cultura[]>(this.baseUrl)
   }
 
-  readById(id: string): Observable<Cultura>{
-    const url = `${this.baseUrl}/${id}`
+  readById(culId: string): Observable<Cultura>{
+    const url = `${this.baseUrl}/${culId}`
     return this.http.get<Cultura>(url)
   }
  
   update(cultura: Cultura): Observable<Cultura>{
-    const url = `${this.baseUrl}/${cultura.id}`
+    const url = `${this.baseUrl}/${cultura.culId}`
     return this.http.put<Cultura>(url, cultura)
   }
   
-  delete(id: number): Observable<Cultura>{    
-    const url = `${this.baseUrl}/${id}`
+  delete(culId: number): Observable<Cultura>{    
+    const url = `${this.baseUrl}/${culId}`
     return this.http.delete<Cultura>(url)
   }
 }  

@@ -17,8 +17,8 @@ export class LaboratorioUpdateComponent implements OnInit {
     private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id')
-    this.laboratorioService.readById(id!).subscribe((laboratorio: Laboratorio) =>{
+    const labId = this.route.snapshot.paramMap.get('labId')
+    this.laboratorioService.readById(labId!).subscribe((laboratorio: Laboratorio) =>{
       this.laboratorio = laboratorio
     })
   }

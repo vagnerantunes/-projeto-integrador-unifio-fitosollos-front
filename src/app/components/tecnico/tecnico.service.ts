@@ -29,18 +29,18 @@ export class TecnicoService {
     return this.http.get<ResponsavelTecnico[]>(this.baseUrl)
   }
 
-  readById(id: string): Observable<ResponsavelTecnico>{
-    const url = `${this.baseUrl}/${id}`
+  readById(tecId: string): Observable<ResponsavelTecnico>{
+    const url = `${this.baseUrl}/${tecId}`
     return this.http.get<ResponsavelTecnico>(url)
   }
  
   update(tecnico: ResponsavelTecnico): Observable<ResponsavelTecnico>{
-    const url = `${this.baseUrl}/${tecnico.id}`
+    const url = `${this.baseUrl}/${tecnico.tecId}`
     return this.http.put<ResponsavelTecnico>(url, tecnico)
   }
   
-  delete(id: number): Observable<ResponsavelTecnico>{    
-    const url = `${this.baseUrl}/${id}`
+  delete(tecId: number): Observable<ResponsavelTecnico>{    
+    const url = `${this.baseUrl}/${tecId}`
     return this.http.delete<ResponsavelTecnico>(url)
   }
 } 

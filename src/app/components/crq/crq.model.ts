@@ -1,4 +1,4 @@
 export interface Crq{
-    id?: number
-    descricao: string
+    crqId?: number
+    crqDescricao: string
 }

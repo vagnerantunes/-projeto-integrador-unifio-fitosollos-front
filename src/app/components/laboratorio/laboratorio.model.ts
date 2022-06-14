@@ -1,6 +1,8 @@
 export interface Laboratorio{
-    id?: number
-    cnpj: string
-    endereco: string
-    telefone: string
+    labId?: number
+    labRazaoSocial: string
+    labNomeFantasia: string
+    labCnpj: string
+    labEndereco: string
+    labTelefone: string
 }

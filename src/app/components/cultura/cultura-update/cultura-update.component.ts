@@ -18,8 +18,8 @@ export class CulturaUpdateComponent implements OnInit {
     private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id')
-    this.culturaService.readById(id!).subscribe((cultura: Cultura) =>{
+    const culId = this.route.snapshot.paramMap.get('culId')
+    this.culturaService.readById(culId!).subscribe((cultura: Cultura) =>{
       this.cultura = cultura
     })
   }

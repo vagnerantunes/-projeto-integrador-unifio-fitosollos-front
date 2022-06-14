@@ -10,7 +10,7 @@ import { CulturaService } from '../cultura.service';
 export class CulturaReadComponent implements OnInit {
 
   culturas!: Cultura[]
-  displayedColumns = ['id', 'descricao', 'acao']
+  displayedColumns = ['culId', 'culDecricao', 'acao']
 
   constructor(private culturaService: CulturaService) { }
 

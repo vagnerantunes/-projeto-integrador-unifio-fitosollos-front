@@ -1,4 +1,4 @@
 export interface TipoAnalise{
-    id?: number
-    descricao: string
+    tipId?: number
+    tipDescricao: string
 }

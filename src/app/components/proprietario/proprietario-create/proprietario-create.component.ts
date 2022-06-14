@@ -11,15 +11,15 @@ import { ProprietarioService } from '../proprietario.service';
 export class ProprietarioCreateComponent implements OnInit {
 
   proprietario: Proprietario = {
-    nome: '',
-    cpfcnpj: '',
-    ddd: '',
-    telefone: '',
-    cidade: '',
-    uf: '',
-    endereco: '',
-    bairro: '',
-    cep: ''
+    proNome: '',
+    proCpfCnpj: '',
+    proDdd: '',
+    proTelefone: '',
+    proCidade: '',
+    proUf: '',
+    proEndereco: '',
+    proBairro: '',
+    proCep: ''
   }
 
   constructor(private proprietarioService: ProprietarioService,

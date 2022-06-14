@@ -18,14 +18,14 @@ export class PrecosDeleteComponent implements OnInit {
     private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id');
-    this.precoService.readById(id!).subscribe(preco =>{
+    const tabId = this.route.snapshot.paramMap.get('tabId');
+    this.precoService.readById(tabId!).subscribe(preco =>{
       this.preco = preco
     })
   }
 
   deletePreco(): void {
-    this.precoService.delete(this.preco.id!).subscribe(() =>{
+    this.precoService.delete(this.preco.tabId!).subscribe(() =>{
     this.precoService.showMessage('Preço excluido com sucesso!')  
     this.cancel();
     })

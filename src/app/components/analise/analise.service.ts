@@ -29,18 +29,18 @@ export class AnaliseService {
     return this.http.get<TipoAnalise[]>(this.baseUrl)
   }
 
-  readById(id: string): Observable<TipoAnalise>{
-    const url = `${this.baseUrl}/${id}`
+  readById(tipId: string): Observable<TipoAnalise>{
+    const url = `${this.baseUrl}/${tipId}`
     return this.http.get<TipoAnalise>(url)
   }
  
   update(analise: TipoAnalise): Observable<TipoAnalise>{
-    const url = `${this.baseUrl}/${analise.id}`
+    const url = `${this.baseUrl}/${analise.tipId}`
     return this.http.put<TipoAnalise>(url, analise)
   }
   
-  delete(id: number): Observable<TipoAnalise>{    
-    const url = `${this.baseUrl}/${id}`
+  delete(tipId: number): Observable<TipoAnalise>{    
+    const url = `${this.baseUrl}/${tipId}`
     return this.http.delete<TipoAnalise>(url)
   }
 }  

@@ -19,14 +19,14 @@ export class UsuarioDeleteComponent implements OnInit {
     private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id');
-    this.usuarioService.readById(id!).subscribe(usuario =>{
+    const usuId = this.route.snapshot.paramMap.get('usuId');
+    this.usuarioService.readById(usuId!).subscribe(usuario =>{
       this.usuario = usuario
     })
   }
 
   deleteCargo(): void {
-    this.usuarioService.delete(this.usuario.id!).subscribe(() =>{
+    this.usuarioService.delete(this.usuario.usuId!).subscribe(() =>{
     this.usuarioService.showMessage('Usuário excluido com sucesso!')  
     this.router.navigate(['/usuarios'])
     })

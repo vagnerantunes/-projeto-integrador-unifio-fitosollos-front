@@ -17,8 +17,8 @@ export class CrqUpdateComponent implements OnInit {
     private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id')
-    this.crqService.readById(id!).subscribe((crq: Crq) =>{
+    const crqId = this.route.snapshot.paramMap.get('crqId')
+    this.crqService.readById(crqId!).subscribe((crq: Crq) =>{
       this.crq = crq
     })
   }

@@ -1,26 +1,26 @@
 <div class="mat-elevation-z4">
     <table mat-table [dataSource]="crqs">
 
-      <ng-container matColumnDef="id">
+      <ng-container matColumnDef="crqId">
         <th mat-header-cell *matHeaderCellDef>Id</th>
-        <td mat-cell *matCellDef="let row">{{row.id}}</td>
+        <td mat-cell *matCellDef="let row">{{row.crqId}}</td>
       </ng-container>
   
-      <ng-container matColumnDef="descricao">
+      <ng-container matColumnDef="crqDescricao">
         <th mat-header-cell *matHeaderCellDef>Nome</th>
-        <td mat-cell *matCellDef="let row">{{row.descricao}}</td>
+        <td mat-cell *matCellDef="let row">{{row.crqDescricao}}</td>
       </ng-container>
 
       <ng-container matColumnDef="acao">
         <th mat-header-cell *matHeaderCellDef>Ações</th>                     
         <td mat-cell *matCellDef="let row">
-            <a routerLink="/crqs/update/{{ row.id }}" class="edit">
+            <a routerLink="/crqs/update/{{ row.crqId }}" class="edit">
                 <i class="material-icons">
                     edit
                 </i>
             </a>
             
-            <a routerLink="/crqs/delete/{{ row.id }}" class="delete"> 
+            <a routerLink="/crqs/delete/{{ row.crqId }}" class="delete"> 
                 <i class="material-icons">
                     delete
                 </i>

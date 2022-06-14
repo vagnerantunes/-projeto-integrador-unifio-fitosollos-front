@@ -11,7 +11,7 @@ import { LaboratorioService } from '../laboratorio.service';
 export class LaboratorioReadComponent implements OnInit {
 
   laboratorio!: Laboratorio[]
-  displayedColumns = ['id', 'cnpj', 'endereco', 'telefone', 'acao']
+  displayedColumns = ['labId', 'labRazaoSocial', 'labNomeFantasia','labCnpj', 'labEndereco', 'labTelefone', 'acao']
 
   constructor(private laboratorioService: LaboratorioService) { }
 

@@ -3,15 +3,23 @@
     <form>
 
         <mat-form-field>
-            <input matInput placeholder="CNPJ" [(ngModel)]="laboratorio.cnpj" name="cnpj">
+            <input matInput placeholder="Razão Social" [(ngModel)]="laboratorio.labRazaoSocial" name="labRazaoSocial">
         </mat-form-field>
 
         <mat-form-field>
-            <input matInput placeholder="Endereço" [(ngModel)]="laboratorio.endereco" name="endereco">
+            <input matInput placeholder="Nome Fantasia" [(ngModel)]="laboratorio.labNomeFantasia" name="labNomeFantasia">
         </mat-form-field>
 
         <mat-form-field>
-            <input matInput placeholder="Telefone" [(ngModel)]="laboratorio.telefone" name="telefone">
+            <input matInput placeholder="CNPJ" [(ngModel)]="laboratorio.labCnpj" name="labCnpj">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Endereço" [(ngModel)]="laboratorio.labEndereco" name="labEndereco">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Telefone" [(ngModel)]="laboratorio.labTelefone" name="labTelefone">
         </mat-form-field>
 
     </form>

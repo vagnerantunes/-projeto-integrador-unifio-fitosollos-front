@@ -14,16 +14,16 @@ import { DropdownService } from '../dropdown.service';
 export class TecnicoCreateComponent implements OnInit {
 
   tecnico: ResponsavelTecnico = {
-    ddd: '',
-    nome: '',
-    telefone: '',
-    cidade: '',
-    uf: '',
-    endereco: '',
-    bairro: '',
-    cep: '',
-    crq: 1,
-    laboratorio: 1    
+    tecNome: '',
+    tecDdd: '',
+    tecTelefone: '',
+    tecCidade: '',
+    tecUf: '',
+    tecEndereco: '',
+    tecBairro: '',
+    tecCep: '',
+    tecCrq: 1,
+    tecLaboratorio: 1
   }
 
   crq!: Crq[];

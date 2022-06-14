@@ -18,14 +18,14 @@ export class CrqDeleteComponent implements OnInit {
     private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id');
-    this.crqService.readById(id!).subscribe(crq =>{
+    const crqId = this.route.snapshot.paramMap.get('crqId');
+    this.crqService.readById(crqId!).subscribe(crq =>{
       this.crq = crq
     })
   }
 
   deleteCrq(): void {
-    this.crqService.delete(this.crq.id!).subscribe(() =>{
+    this.crqService.delete(this.crq.crqId!).subscribe(() =>{
     this.crqService.showMessage('Crq excluida com sucesso!')  
     this.router.navigate(['/crqs'])
     })

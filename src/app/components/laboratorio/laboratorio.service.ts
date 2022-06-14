@@ -29,18 +29,18 @@ export class LaboratorioService {
     return this.http.get<Laboratorio[]>(this.baseUrl)
   }
 
-  readById(id: string): Observable<Laboratorio>{
-    const url = `${this.baseUrl}/${id}`
+  readById(labId: string): Observable<Laboratorio>{
+    const url = `${this.baseUrl}/${labId}`
     return this.http.get<Laboratorio>(url)
   }
  
   update(laboratorio: Laboratorio): Observable<Laboratorio>{
-    const url = `${this.baseUrl}/${laboratorio.id}`
+    const url = `${this.baseUrl}/${laboratorio.labId}`
     return this.http.put<Laboratorio>(url, laboratorio)
   }
   
-  delete(id: number): Observable<Laboratorio>{    
-    const url = `${this.baseUrl}/${id}`
+  delete(labId: number): Observable<Laboratorio>{    
+    const url = `${this.baseUrl}/${labId}`
     return this.http.delete<Laboratorio>(url)
   }
 }  

@@ -21,8 +21,8 @@ export class PrecosUpdateComponent implements OnInit {
   constructor(private precoService: PrecoService, private dropdownService: DropdownService , private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id');
-    this.precoService.readById(id!).subscribe(preco => {
+    const tabId = this.route.snapshot.paramMap.get('tabId');
+    this.precoService.readById(tabId!).subscribe(preco => {
       this.preco = preco
     });
 

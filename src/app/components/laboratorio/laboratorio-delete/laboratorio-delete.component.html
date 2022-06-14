@@ -2,13 +2,19 @@
     <mat-card-title>Excluir Produto</mat-card-title>
     <form>
         <mat-form-field>
-            <input matInput placeholder="Cnpj" [value]="laboratorio.cnpj" name="cnpj" disabled>
+            <input matInput placeholder="Razão Social" [value]="laboratorio.labRazaoSocial" name="labRazaoSocial" disabled>
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="Endereço" [value]="laboratorio.endereco" name="endereco" disabled>
+            <input matInput placeholder="Nome Fantasia" [value]="laboratorio.labNomeFantasia" name="labNomeFantasia" disabled>
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="Telefone" [value]="laboratorio.telefone" name="telefone" disabled>
+            <input matInput placeholder="Cnpj" [value]="laboratorio.labCnpj" name="labCnpj" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Endereço" [value]="laboratorio.labEndereco" name="labEndereco" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Telefone" [value]="laboratorio.labTelefone" name="labTelefone" disabled>
         </mat-form-field>
     </form>
 

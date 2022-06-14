@@ -29,18 +29,18 @@ export class FormaPagamentoService {
     return this.http.get<FormaPagamento[]>(this.baseUrl)
   }
 
-  readById(id: string): Observable<FormaPagamento>{
-    const url = `${this.baseUrl}/${id}`
+  readById(fpgId: string): Observable<FormaPagamento>{
+    const url = `${this.baseUrl}/${fpgId}`
     return this.http.get<FormaPagamento>(url)
   }
  
   update(formaPagamento: FormaPagamento): Observable<FormaPagamento>{
-    const url = `${this.baseUrl}/${formaPagamento.id}`
+    const url = `${this.baseUrl}/${formaPagamento.fpgId}`
     return this.http.put<FormaPagamento>(url, formaPagamento)
   }
   
-  delete(id: number): Observable<FormaPagamento>{    
-    const url = `${this.baseUrl}/${id}`
+  delete(fpgId: number): Observable<FormaPagamento>{    
+    const url = `${this.baseUrl}/${fpgId}`
     return this.http.delete<FormaPagamento>(url)
   }
 }  

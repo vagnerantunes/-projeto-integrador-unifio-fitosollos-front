@@ -21,8 +21,8 @@ export class TecnicoUpdateComponent implements OnInit {
   constructor(private tecnicoService: TecnicoService, private dropdownService: DropdownService , private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id');
-    this.tecnicoService.readById(id!).subscribe(tecnico => {
+    const tecId = this.route.snapshot.paramMap.get('tecId');
+    this.tecnicoService.readById(tecId!).subscribe(tecnico => {
       this.tecnico = tecnico
     });
 

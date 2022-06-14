@@ -7,50 +7,51 @@
         
         <form action="">
             <mat-form-field>
-                <input matInput placeholder="Nome" [(ngModel)]="tecnico.nome" name="nome" type="text">
+                <input matInput placeholder="Nome" [(ngModel)]="tecnico.tecNome" name="tecNome" type="text">
             </mat-form-field>
 
             <mat-form-field>
-                <input matInput placeholder="DDD" [(ngModel)]="tecnico.ddd" name="ddd" type="text">
+                <input matInput placeholder="DDD" [(ngModel)]="tecnico.tecDdd" name="tecDdd" type="text">
             </mat-form-field>
 
             <mat-form-field>
-                <input matInput placeholder="Telefone" [(ngModel)]="tecnico.telefone" name="telefone" type="text">
+                <input matInput placeholder="Telefone" [(ngModel)]="tecnico.tecTelefone" name="tecTelefone" type="text">
             </mat-form-field>
 
             <mat-form-field>
-                <input matInput placeholder="Cidade" [(ngModel)]="tecnico.cidade" name="cidade" type="text">
+                <input matInput placeholder="Cidade" [(ngModel)]="tecnico.tecCidade" name="tecCidade" type="text">
             </mat-form-field>
 
             <mat-form-field>
-                <input matInput placeholder="UF" [(ngModel)]="tecnico.uf" name="uf" type="text">
+                <input matInput placeholder="UF" [(ngModel)]="tecnico.tecUf" name="tecUf" type="text">
             </mat-form-field>
 
             <mat-form-field>
-                <input matInput placeholder="Endereço" [(ngModel)]="tecnico.endereco" name="endereco" type="text">
+                <input matInput placeholder="Endereço" [(ngModel)]="tecnico.tecEndereco" name="tecEndereco" type="text">
             </mat-form-field>
 
             <mat-form-field>
-                <input matInput placeholder="Bairro" [(ngModel)]="tecnico.bairro" name="bairro" type="text">
+                <input matInput placeholder="Bairro" [(ngModel)]="tecnico.tecBairro" name="tecBairro" type="text">
             </mat-form-field>
 
             <mat-form-field>
-                <input matInput placeholder="CEP" [(ngModel)]="tecnico.cep" name="cep" type="text">
+                <input matInput placeholder="CEP" [(ngModel)]="tecnico.tecCep" name="tecCep" type="text">
             </mat-form-field>
 
             <mat-form-field>
                 <mat-label>CRQ</mat-label>
-                <select matNativeControl required [(ngModel)]="tecnico.crq" name="crq">
-                  <option *ngFor="let crqs of crq" [value]="crqs.id">{{crqs.descricao}}</option>
+                <select matNativeControl required [(ngModel)]="tecnico.tecCrq" name="tecCrq">
+                  <option *ngFor="let crqs of crq" [value]="crqs.crqId">{{crqs.crqDescricao}}</option>
                 </select>
               </mat-form-field>
 
               <mat-form-field>
                 <mat-label>Laboratório</mat-label>
-                <select matNativeControl required [(ngModel)]="tecnico.laboratorio" name="laboratorio">
-                  <option *ngFor="let laboratorios of laboratorio" [value]="laboratorios.id">{{laboratorios.cnpj}}</option>
+                <select matNativeControl required [(ngModel)]="tecnico.tecLaboratorio" name="tecLaboratorio">
+                  <option *ngFor="let laboratorios of laboratorio" [value]="laboratorios.labId">{{laboratorios.labNomeFantasia}}</option>
                 </select>
               </mat-form-field>
+              
         </form>
 
         <button appGreen mat-raised-button (click)="updateTecnico()">Salvar</button>

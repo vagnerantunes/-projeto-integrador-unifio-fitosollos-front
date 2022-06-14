@@ -11,7 +11,7 @@ import { CrqService } from '../crq.service';
 export class CrqCreateComponent implements OnInit {
 
   crq: Crq = {
-    descricao: ''
+    crqDescricao: ''
   }
 
   constructor(private crqService: CrqService,

@@ -18,8 +18,8 @@ export class FormaPagamentoUpdateComponent implements OnInit {
     private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id')
-    this.pagamentoService.readById(id!).subscribe((pagamento: FormaPagamento) =>{
+    const fpgId = this.route.snapshot.paramMap.get('fpgId')
+    this.pagamentoService.readById(fpgId!).subscribe((pagamento: FormaPagamento) =>{
       this.pagamento = pagamento
     })
   }

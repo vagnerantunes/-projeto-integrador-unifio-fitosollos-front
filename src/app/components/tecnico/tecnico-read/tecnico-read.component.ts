@@ -10,7 +10,7 @@ import { TecnicoService } from '../tecnico.service';
 export class TecnicoReadComponent implements OnInit {
 
   tecnicos!: ResponsavelTecnico[]
-  displayedColumns = ['id', 'nome', 'ddd', 'telefone', 'cidade', 'uf', 'endereco', 'bairro', 'cep', 'laboratorio', 'crq', 'acao']
+  displayedColumns = ['tecId', 'tecNome', 'tecDdd', 'tecTelefone', 'tecCidade', 'tecUf', 'tecEndereco', 'tecBairro', 'tecCep', 'tecLaboratorio', 'tecCrq', 'acao']
 
   constructor(private tecnicoService: TecnicoService) { }
 

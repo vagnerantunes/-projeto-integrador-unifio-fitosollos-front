@@ -11,7 +11,7 @@ import { AnaliseService } from './../analise.service';
 export class AnaliseCreateComponent implements OnInit {
 
   analise: TipoAnalise = {
-    descricao: ''
+    tipDescricao: ''
   }
 
   constructor(private analiserService: AnaliseService,

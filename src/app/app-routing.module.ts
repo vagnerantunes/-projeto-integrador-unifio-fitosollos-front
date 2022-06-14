@@ -85,11 +85,11 @@ const routes: Routes = [
     component: UsuarioCreateComponent
   },
   {
-    path: "usuarios/update/:id",
+    path: "usuarios/update/:usuId",
     component: UsuarioUpdateComponent
   },
   {
-    path: "usuarios/delete/:id",
+    path: "usuarios/delete/:usuId",
     component: UsuarioDeleteComponent
   },
   {
@@ -101,11 +101,11 @@ const routes: Routes = [
     component: ProprietarioCreateComponent
   },
   {
-    path: "proprietarios/update/:id",
+    path: "proprietarios/update/:proId",
     component: ProprietarioUpdateComponent
   },
   {
-    path: "proprietarios/delete/:id",
+    path: "proprietarios/delete/:proId",
     component: ProprietarioDeleteComponent
   },
   {
@@ -117,11 +117,11 @@ const routes: Routes = [
     component: CrqCreateComponent
   },
   {
-    path: "crqs/update/:id",
+    path: "crqs/update/:crqId",
     component: CrqUpdateComponent
   },
   {
-    path: "crqs/delete/:id",
+    path: "crqs/delete/:crqId",
     component: CrqDeleteComponent
   },
   {
@@ -133,11 +133,11 @@ const routes: Routes = [
     component: CulturaCreateComponent
   },
   {
-    path: "culturas/update/:id",
+    path: "culturas/update/:culId",
     component: CulturaUpdateComponent
   },
   {
-    path: "culturas/delete/:id",
+    path: "culturas/delete/:culId",
     component: CulturaDeleteComponent
   },
   {
@@ -149,11 +149,11 @@ const routes: Routes = [
     component: FormaPagamentoCreateComponent
   },
   {
-    path: "pagamentos/update/:id",
+    path: "pagamentos/update/:fpgId",
     component: FormaPagamentoUpdateComponent
   },
   {
-    path: "pagamentos/delete/:id",
+    path: "pagamentos/delete/:fpgId",
     component: FormaPagamentoDeleteComponent
   },
   {
@@ -165,11 +165,11 @@ const routes: Routes = [
     component: LaboratorioCreateComponent
   },
   {
-    path: "laboratorios/update/:id",
+    path: "laboratorios/update/:labId",
     component: LaboratorioUpdateComponent
   },
   {
-    path: "laboratorios/delete/:id",
+    path: "laboratorios/delete/:labId",
     component: LaboratorioDeleteComponent
   },
   {
@@ -181,11 +181,11 @@ const routes: Routes = [
     component: NematoideCreateComponent
   },
   {
-    path: "nematoides/update/:id",
+    path: "nematoides/update/:nemId",
     component: NematoideUpdateComponent
   },
   {
-    path: "nematoides/delete/:id",
+    path: "nematoides/delete/:nemId",
     component: NematoideDeleteComponent
   },
   {
@@ -197,11 +197,11 @@ const routes: Routes = [
     component: AnaliseCreateComponent
   },
   {
-    path: "analises/update/:id",
+    path: "analises/update/:tipId",
     component: AnaliseUpdateComponent
   },
   {
-    path: "analises/delete/:id",
+    path: "analises/delete/:tipId",
     component: AnaliseDeleteComponent
   },
   {
@@ -213,11 +213,11 @@ const routes: Routes = [
     component: PrecosCreateComponent
   },
   {
-    path: "precos/update/:id",
+    path: "precos/update/:tabId",
     component: PrecosUpdateComponent
   },
   {
-    path: "precos/delete/:id",
+    path: "precos/delete/:tabId",
     component: PrecosDeleteComponent
   },
   {
@@ -229,11 +229,11 @@ const routes: Routes = [
     component: TecnicoCreateComponent
   },
   {
-    path: "tecnicos/update/:id",
+    path: "tecnicos/update/:tecId",
     component: TecnicoUpdateComponent
   },
   {
-    path: "tecnicos/delete/:id",
+    path: "tecnicos/delete/:tecId",
     component: TecnicoDeleteComponent
   },
   {

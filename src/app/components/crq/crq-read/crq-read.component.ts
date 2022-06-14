@@ -10,7 +10,7 @@ import { CrqService } from '../crq.service';
 export class CrqReadComponent implements OnInit {
 
   crqs!: Crq[]
-  displayedColumns = ['id', 'descricao', 'acao']
+  displayedColumns = ['crqId', 'crqDescricao', 'acao']
 
   constructor(private crqService: CrqService) { }
 

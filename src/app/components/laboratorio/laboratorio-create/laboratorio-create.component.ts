@@ -11,9 +11,11 @@ import { Laboratorio } from '../laboratorio.model';
 export class LaboratorioCreateComponent implements OnInit {
 
   laboratorio: Laboratorio = {
-    cnpj: '',
-    endereco: '',
-    telefone: ''
+    labRazaoSocial: '',
+    labNomeFantasia: '',
+    labCnpj: '',
+    labEndereco: '',
+    labTelefone: ''
   }
 
   constructor(private laboratorioService: LaboratorioService,

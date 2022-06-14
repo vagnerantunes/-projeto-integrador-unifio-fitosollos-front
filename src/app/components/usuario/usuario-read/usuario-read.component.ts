@@ -10,7 +10,7 @@ import { Usuario } from '../usuario.model';
 export class UsuarioReadComponent implements OnInit {
 
   usuarios!: Usuario[]
-  displayedColumns = ['id', 'email', 'senha', 'acao']
+  displayedColumns = ['usuId', 'usuEmail', 'usuSenha', 'acao']
 
   constructor(private usuarioService: UsuarioService) { }
 

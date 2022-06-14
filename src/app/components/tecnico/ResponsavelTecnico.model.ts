@@ -1,13 +1,13 @@
 export interface ResponsavelTecnico{
-    id?: number
-    nome: string
-    ddd: string
-	telefone: string
-	cidade: string
-	uf: string	
-	endereco: string
-	bairro: string
-	cep: string	
-	crq?: number;	
-	laboratorio?: number;
+    tecId?: number
+    tecNome: string
+    tecDdd: string
+	tecTelefone: string
+	tecCidade: string
+	tecUf: string	
+	tecEndereco: string
+	tecBairro: string
+	tecCep: string	
+	tecCrq: number;	
+	tecLaboratorio: number;
 }

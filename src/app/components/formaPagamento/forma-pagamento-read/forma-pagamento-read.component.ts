@@ -11,7 +11,7 @@ import { FormaPagamento } from '../formaPagamento.model';
 export class FormaPagamentoReadComponent implements OnInit {
 
   pagamentos!: FormaPagamento[]
-  displayedColumns = ['id', 'descricao', 'acao']
+  displayedColumns = ['fpgId', 'fpgDescricao', 'acao']
 
   constructor(private pagamentoService: FormaPagamentoService) { }
 

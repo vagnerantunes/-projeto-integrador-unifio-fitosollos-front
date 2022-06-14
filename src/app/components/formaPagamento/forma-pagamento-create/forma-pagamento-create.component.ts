@@ -11,7 +11,7 @@ import { FormaPagamento } from '../formaPagamento.model';
 export class FormaPagamentoCreateComponent implements OnInit {
 
   formaPagamento: FormaPagamento = {
-    descricao: ''
+    fpgDescricao: ''
   }
 
   //importando productService

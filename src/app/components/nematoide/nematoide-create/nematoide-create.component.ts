@@ -11,7 +11,7 @@ import { Nematoide } from './../nematoide.model';
 export class NematoideCreateComponent implements OnInit {
 
   nematoide: Nematoide = {
-    descricao: ''
+    nemDescricao: ''
   }
 
   constructor(private nematoideService: NematoideService,

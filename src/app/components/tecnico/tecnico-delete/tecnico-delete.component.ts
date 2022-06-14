@@ -18,14 +18,14 @@ export class TecnicoDeleteComponent implements OnInit {
     private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id');
-    this.tecnicoService.readById(id!).subscribe(tecnico =>{
+    const tecId = this.route.snapshot.paramMap.get('tecId');
+    this.tecnicoService.readById(tecId!).subscribe(tecnico =>{
       this.tecnico = tecnico
     })
   }
 
   deleteTecnico(): void {
-    this.tecnicoService.delete(this.tecnico.id!).subscribe(() =>{
+    this.tecnicoService.delete(this.tecnico.tecId!).subscribe(() =>{
     this.tecnicoService.showMessage('Técnico excluido com sucesso!')  
     this.cancel();
     })

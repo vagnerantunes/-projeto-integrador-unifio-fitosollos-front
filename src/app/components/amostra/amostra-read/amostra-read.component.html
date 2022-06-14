@@ -38,22 +38,22 @@
 
       <ng-container matColumnDef="usuario">
         <th mat-header-cell *matHeaderCellDef>Usuário</th>
-        <td mat-cell *matCellDef="let usuarios">{{usuarios.usuario.email}}</td>
+        <td mat-cell *matCellDef="let usuarios">{{usuarios.usuario.usuEmail}}</td>
       </ng-container>
 
       <ng-container matColumnDef="analise">
         <th mat-header-cell *matHeaderCellDef>Tipo de Analise</th>
-        <td mat-cell *matCellDef="let analises">{{analises.analise.descricao}}</td>
+        <td mat-cell *matCellDef="let analises">{{analises.analise.tipDescricao}}</td>
       </ng-container>
 
       <ng-container matColumnDef="cultura">
         <th mat-header-cell *matHeaderCellDef>Cultura</th>
-        <td mat-cell *matCellDef="let culturas">{{culturas.cultura.descricao}}</td>
+        <td mat-cell *matCellDef="let culturas">{{culturas.cultura.culDecricao}}</td>
       </ng-container>
 
       <ng-container matColumnDef="proprietario">
         <th mat-header-cell *matHeaderCellDef>Proprietário</th>
-        <td mat-cell *matCellDef="let proprietarios">{{proprietarios.proprietario.nome}}</td>
+        <td mat-cell *matCellDef="let proprietarios">{{proprietarios.proprietario.proNome}}</td>
       </ng-container>
 
       <ng-container matColumnDef="tecnico">
@@ -63,7 +63,7 @@
 
       <ng-container matColumnDef="laboratorio">
         <th mat-header-cell *matHeaderCellDef>Laboratório</th>
-        <td mat-cell *matCellDef="let laboratorios">{{laboratorios.laboratorio.cnpj}}</td>
+        <td mat-cell *matCellDef="let laboratorios">{{laboratorios.laboratorio.labNomeFantasia}}</td>
       </ng-container>
 
       <ng-container matColumnDef="acao">

@@ -11,7 +11,7 @@ import { ProprietarioService } from '../proprietario.service';
 export class ProprietarioReadComponent implements OnInit {
 
   proprietarios!: Proprietario[]
-  displayedColumns = ['id', 'nome', 'cpfcnpj', 'ddd', 'telefone', 'cidade', 'uf', 'endereco', 'bairro', 'cep', 'acao']
+  displayedColumns = ['proId', 'proNome', 'proCpfCnpj', 'proDdd', 'proTelefone', 'proCidade', 'proUf', 'proEndereco', 'proBairro', 'proCep', 'acao']
 
   constructor(private proprietarioService: ProprietarioService) { }
 

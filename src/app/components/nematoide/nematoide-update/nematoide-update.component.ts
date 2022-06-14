@@ -17,8 +17,8 @@ export class NematoideUpdateComponent implements OnInit {
     private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id')
-    this.nematoideService.readById(id!).subscribe((nematoide: Nematoide) =>{
+    const nemId = this.route.snapshot.paramMap.get('nemId')
+    this.nematoideService.readById(nemId!).subscribe((nematoide: Nematoide) =>{
       this.nematoide = nematoide
     })
   }

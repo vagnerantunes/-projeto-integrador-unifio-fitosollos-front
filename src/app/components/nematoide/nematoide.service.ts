@@ -29,18 +29,18 @@ export class NematoideService {
     return this.http.get<Nematoide[]>(this.baseUrl)
   }
 
-  readById(id: string): Observable<Nematoide>{
-    const url = `${this.baseUrl}/${id}`
+  readById(nemId: string): Observable<Nematoide>{
+    const url = `${this.baseUrl}/${nemId}`
     return this.http.get<Nematoide>(url)
   }
  
   update(nematoide: Nematoide): Observable<Nematoide>{
-    const url = `${this.baseUrl}/${nematoide.id}`
+    const url = `${this.baseUrl}/${nematoide.nemId}`
     return this.http.put<Nematoide>(url, nematoide)
   }
   
-  delete(id: number): Observable<Nematoide>{    
-    const url = `${this.baseUrl}/${id}`
+  delete(nemId: number): Observable<Nematoide>{    
+    const url = `${this.baseUrl}/${nemId}`
     return this.http.delete<Nematoide>(url)
   }
 }  

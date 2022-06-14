@@ -18,14 +18,14 @@ export class NematoideDeleteComponent implements OnInit {
     private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id');
-    this.nematoideService.readById(id!).subscribe(nematoide =>{
+    const nemId = this.route.snapshot.paramMap.get('nemId');
+    this.nematoideService.readById(nemId!).subscribe(nematoide =>{
       this.nematoide = nematoide
     })
   }
 
   deleteNematoide(): void {
-    this.nematoideService.delete(this.nematoide.id!).subscribe(() =>{
+    this.nematoideService.delete(this.nematoide.nemId!).subscribe(() =>{
     this.nematoideService.showMessage('Nematoide excluido com sucesso!')  
     this.router.navigate(['/nematoides'])
     })

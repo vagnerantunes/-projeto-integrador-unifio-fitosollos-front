@@ -14,9 +14,9 @@ import { DropdownService } from '../dropdown.service';
 export class PrecosCreateComponent implements OnInit {
 
   preco: TabelaPreco = {
-    valor: 0,
-    analise: 1,
-    laboratorio: 1
+    tabValor: 0,
+    tabAnalise: 0,
+    tabLaboratorio: 0
   }
 
   laboratorio!: Laboratorio[];

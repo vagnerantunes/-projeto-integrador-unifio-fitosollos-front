@@ -29,18 +29,18 @@ export class CrqService {
     return this.http.get<Crq[]>(this.baseUrl)
   }
 
-  readById(id: string): Observable<Crq>{
-    const url = `${this.baseUrl}/${id}`
+  readById(crqId: string): Observable<Crq>{
+    const url = `${this.baseUrl}/${crqId}`
     return this.http.get<Crq>(url)
   }
  
   update(crq: Crq): Observable<Crq>{
-    const url = `${this.baseUrl}/${crq.id}`
+    const url = `${this.baseUrl}/${crq.crqId}`
     return this.http.put<Crq>(url, crq)
   }
   
-  delete(id: number): Observable<Crq>{    
-    const url = `${this.baseUrl}/${id}`
+  delete(crqId: number): Observable<Crq>{    
+    const url = `${this.baseUrl}/${crqId}`
     return this.http.delete<Crq>(url)
   }
 }  

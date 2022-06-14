@@ -17,8 +17,8 @@ export class ProprietarioUpdateComponent implements OnInit {
     private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id')
-    this.proprietarioService.readById(id!).subscribe((proprietario: Proprietario) =>{
+    const proId = this.route.snapshot.paramMap.get('proId')
+    this.proprietarioService.readById(proId!).subscribe((proprietario: Proprietario) =>{
       this.proprietario = proprietario
     })
   }

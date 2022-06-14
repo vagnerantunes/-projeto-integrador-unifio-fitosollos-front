@@ -1,4 +1,4 @@
 export interface Nematoide{
-    id?: number
-    descricao: string
+    nemId?: number
+    nemDescricao: string
 }

@@ -17,8 +17,8 @@ export class AnaliseUpdateComponent implements OnInit {
     private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id')
-    this.analiseService.readById(id!).subscribe((analise: TipoAnalise) =>{
+    const tipId = this.route.snapshot.paramMap.get('tipId')
+    this.analiseService.readById(tipId!).subscribe((analise: TipoAnalise) =>{
       this.analise = analise
     })
   }

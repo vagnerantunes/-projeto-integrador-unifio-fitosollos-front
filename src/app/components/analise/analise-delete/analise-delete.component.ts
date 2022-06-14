@@ -18,14 +18,14 @@ export class AnaliseDeleteComponent implements OnInit {
     private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id');
-    this.analiseService.readById(id!).subscribe(analise =>{
+    const tipId = this.route.snapshot.paramMap.get('tipId');
+    this.analiseService.readById(tipId!).subscribe(analise =>{
       this.analise = analise
     })
   }
 
   deleteAnalise(): void {
-    this.analiseService.delete(this.analise.id!).subscribe(() =>{
+    this.analiseService.delete(this.analise.tipId!).subscribe(() =>{
     this.analiseService.showMessage('Tipo de analise excluido com sucesso!')  
     this.router.navigate(['/analises'])
     })

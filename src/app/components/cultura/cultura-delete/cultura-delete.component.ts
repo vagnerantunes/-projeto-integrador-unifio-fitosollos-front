@@ -18,14 +18,14 @@ export class CulturaDeleteComponent implements OnInit {
     private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id');
-    this.culturaService.readById(id!).subscribe(cultura =>{
+    const culId = this.route.snapshot.paramMap.get('culId');
+    this.culturaService.readById(culId!).subscribe(cultura =>{
       this.cultura = cultura
     })
   }
 
   deleteCultura(): void {
-    this.culturaService.delete(this.cultura.id!).subscribe(() =>{
+    this.culturaService.delete(this.cultura.culId!).subscribe(() =>{
     this.culturaService.showMessage('Cultura excluida com sucesso!')  
     this.router.navigate(['/culturas'])
     })

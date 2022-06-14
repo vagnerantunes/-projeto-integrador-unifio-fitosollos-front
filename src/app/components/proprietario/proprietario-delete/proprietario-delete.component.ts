@@ -18,14 +18,14 @@ export class ProprietarioDeleteComponent implements OnInit {
     private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id');
-    this.proprietarioService.readById(id!).subscribe(proprietario =>{
+    const proId = this.route.snapshot.paramMap.get('proId');
+    this.proprietarioService.readById(proId!).subscribe(proprietario =>{
       this.proprietario = proprietario
     })
   }
 
   deleteProprietario(): void {
-    this.proprietarioService.delete(this.proprietario.id!).subscribe(() =>{
+    this.proprietarioService.delete(this.proprietario.proId!).subscribe(() =>{
     this.proprietarioService.showMessage('Proprietario excluido com sucesso!')  
     this.router.navigate(['/proprietarios'])
     })

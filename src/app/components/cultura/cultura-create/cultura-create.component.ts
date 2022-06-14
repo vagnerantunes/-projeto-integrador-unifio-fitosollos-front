@@ -11,7 +11,7 @@ import { CulturaService } from '../cultura.service';
 export class CulturaCreateComponent implements OnInit {
 
   cultura: Cultura = {
-    descricao: ''
+    culDecricao: ''
   }
 
   constructor(private culturaService: CulturaService,

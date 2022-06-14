@@ -29,18 +29,18 @@ export class PrecoService {
     return this.http.get<TabelaPreco[]>(this.baseUrl)
   }
 
-  readById(id: string): Observable<TabelaPreco>{
-    const url = `${this.baseUrl}/${id}`
+  readById(tabId: string): Observable<TabelaPreco>{
+    const url = `${this.baseUrl}/${tabId}`
     return this.http.get<TabelaPreco>(url)
   }
  
   update(preco: TabelaPreco): Observable<TabelaPreco>{
-    const url = `${this.baseUrl}/${preco.id}`
+    const url = `${this.baseUrl}/${preco.tabId}`
     return this.http.put<TabelaPreco>(url, preco)
   }
   
-  delete(id: number): Observable<TabelaPreco>{    
-    const url = `${this.baseUrl}/${id}`
+  delete(tabId: number): Observable<TabelaPreco>{    
+    const url = `${this.baseUrl}/${tabId}`
     return this.http.delete<TabelaPreco>(url)
   }
 } 

@@ -1,4 +1,4 @@
 export interface Cultura{
-    id?: number
-    descricao: string
+    culId?: number
+    culDecricao: string
 }

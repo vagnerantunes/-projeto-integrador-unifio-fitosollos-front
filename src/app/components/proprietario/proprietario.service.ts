@@ -29,18 +29,18 @@ export class ProprietarioService {
     return this.http.get<Proprietario[]>(this.baseUrl)
   }
 
-  readById(id: string): Observable<Proprietario>{
-    const url = `${this.baseUrl}/${id}`
+  readById(proId: string): Observable<Proprietario>{
+    const url = `${this.baseUrl}/${proId}`
     return this.http.get<Proprietario>(url)
   }
  
   update(proprietario: Proprietario): Observable<Proprietario>{
-    const url = `${this.baseUrl}/${proprietario.id}`
+    const url = `${this.baseUrl}/${proprietario.proId}`
     return this.http.put<Proprietario>(url, proprietario)
   }
   
-  delete(id: number): Observable<Proprietario>{    
-    const url = `${this.baseUrl}/${id}`
+  delete(proId: number): Observable<Proprietario>{    
+    const url = `${this.baseUrl}/${proId}`
     return this.http.delete<Proprietario>(url)
   }
   

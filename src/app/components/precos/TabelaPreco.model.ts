@@ -1,6 +1,6 @@
 export interface TabelaPreco{
-    id?: number
-    valor: number
-    analise: number
-    laboratorio: number
+    tabId?: number
+    tabValor: number
+    tabAnalise: number
+    tabLaboratorio: number
 }

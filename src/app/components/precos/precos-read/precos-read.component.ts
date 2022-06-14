@@ -10,7 +10,7 @@ import { PrecoService } from '../preco.service';
 export class PrecosReadComponent implements OnInit {
 
   precos!: TabelaPreco[]
-  displayedColumns = ['id', 'valor', 'laboratorio', 'analise', 'acao']
+  displayedColumns = ['tabId', 'tabValor', 'tabLaboratorio', 'tabAnalise', 'acao']
 
   constructor(private precoService: PrecoService) { }
 

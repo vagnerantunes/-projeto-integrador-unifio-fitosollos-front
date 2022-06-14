@@ -10,7 +10,7 @@ import { AnaliseService } from '../analise.service';
 export class AnaliseReadComponent implements OnInit {
 
   analises!: TipoAnalise[]
-  displayedColumns = ['id', 'descricao', 'acao']
+  displayedColumns = ['tipId', 'tipDescricao', 'acao']
 
   constructor(private analiseService: AnaliseService) { }
 

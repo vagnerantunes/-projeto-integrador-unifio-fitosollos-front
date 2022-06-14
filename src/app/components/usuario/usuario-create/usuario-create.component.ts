@@ -11,8 +11,8 @@ import { Usuario } from '../usuario.model';
 export class UsuarioCreateComponent implements OnInit {
 
   usuario: Usuario = {
-    email: '',
-    senha: ''
+    usuEmail: '',
+    usuSenha: ''
   }
 
   constructor(private usuarioService: UsuarioService,

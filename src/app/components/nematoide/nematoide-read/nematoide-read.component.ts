@@ -10,7 +10,7 @@ import { NematoideService } from '../nematoide.service';
 export class NematoideReadComponent implements OnInit {
 
   nematoides!: Nematoide[]
-  displayedColumns = ['id', 'descricao', 'acao']
+  displayedColumns = ['nemId', 'nemDescricao', 'acao']
 
   constructor(private nematoideService: NematoideService) { }
 

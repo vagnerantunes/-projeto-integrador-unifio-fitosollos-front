@@ -18,14 +18,14 @@ export class FormaPagamentoDeleteComponent implements OnInit {
     private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id');
-    this.pagamentoService.readById(id!).subscribe(pagamento =>{
+    const fpgId = this.route.snapshot.paramMap.get('fpgId');
+    this.pagamentoService.readById(fpgId!).subscribe(pagamento =>{
       this.pagamento = pagamento
     })
   }
 
   deletePagamento(): void {
-    this.pagamentoService.delete(this.pagamento.id!).subscribe(() =>{
+    this.pagamentoService.delete(this.pagamento.fpgId!).subscribe(() =>{
     this.pagamentoService.showMessage('Forma de pagamento excluida com sucesso!')  
     this.router.navigate(['/pagamentos'])
     })

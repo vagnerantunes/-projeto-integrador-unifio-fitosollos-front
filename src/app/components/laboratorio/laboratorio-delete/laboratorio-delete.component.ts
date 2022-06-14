@@ -18,14 +18,14 @@ export class LaboratorioDeleteComponent implements OnInit {
     private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id');
-    this.laboratorioService.readById(id!).subscribe(laboratorio =>{
+    const labId = this.route.snapshot.paramMap.get('labId');
+    this.laboratorioService.readById(labId!).subscribe(laboratorio =>{
       this.laboratorio = laboratorio
     })
   }
 
   deleteLaboratorio(): void {
-    this.laboratorioService.delete(this.laboratorio.id!).subscribe(() =>{
+    this.laboratorioService.delete(this.laboratorio.labId!).subscribe(() =>{
     this.laboratorioService.showMessage('Laboratório excluido com sucesso!')  
     this.router.navigate(['/laboratorios'])
     })
