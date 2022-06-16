@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { FormaPagamento } from '../formaPagamento/formaPagamento.model';
+import { Amostra } from '../amostra/amostra.model';
 
 
 @Injectable({
@@ -11,8 +12,7 @@ export class DropdownService {
 
   baseUrlFPagamento = "http://localhost:8080/fpagamentos";
 
-  //baseUrlLaboratorio = "http://localhost:8080/laboratorios";
-
+  baseUrlAmostra = "http://localhost:8080/amostras";
 
   constructor(private http: HttpClient) { }
 
@@ -24,14 +24,13 @@ export class DropdownService {
     return this.http.post<FormaPagamento>(this.baseUrlFPagamento, fpagamento)
   }
 
-/*
-  readLaboratorio(){
-    return this.http.get<Laboratorio[]>(this.baseUrlLaboratorio);
+  readAmostra(){
+    return this.http.get<Amostra[]>(this.baseUrlAmostra);
   }
 
-  createLaboratorio(laboratorio: Laboratorio): Observable<Laboratorio>{
-    return this.http.post<Laboratorio>(this.baseUrlLaboratorio, laboratorio)
+  createAmostra(amostra: Amostra): Observable<Amostra>{
+    return this.http.post<Amostra>(this.baseUrlAmostra, amostra)
   }
-*/
+
 
 }

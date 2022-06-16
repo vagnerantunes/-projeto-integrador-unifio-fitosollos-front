@@ -29,18 +29,18 @@ export class RecebimentoService {
     return this.http.get<Recebimento[]>(this.baseUrl)
   }
 
-  readById(id: string): Observable<Recebimento>{
-    const url = `${this.baseUrl}/${id}`
+  readById(recId: string): Observable<Recebimento>{
+    const url = `${this.baseUrl}/${recId}`
     return this.http.get<Recebimento>(url)
   }
  
   update(recebimento: Recebimento): Observable<Recebimento>{
-    const url = `${this.baseUrl}/${recebimento.id}`
+    const url = `${this.baseUrl}/${recebimento.recId}`
     return this.http.put<Recebimento>(url, recebimento)
   }
   
-  delete(id: number): Observable<Recebimento>{    
-    const url = `${this.baseUrl}/${id}`
+  delete(recId: number): Observable<Recebimento>{    
+    const url = `${this.baseUrl}/${recId}`
     return this.http.delete<Recebimento>(url)
   }
   

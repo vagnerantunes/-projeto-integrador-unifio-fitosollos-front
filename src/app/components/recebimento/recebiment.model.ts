@@ -1,7 +1,7 @@
 export interface Recebimento{
-    id?: number
-    valor: number
-    horario: Date
-    amostra: number
-    formaPagamento: number
+    recId?: number
+    recValor: number
+    recHorario: Date
+    recAmostra: number
+    recFormaPagamento: number
 }

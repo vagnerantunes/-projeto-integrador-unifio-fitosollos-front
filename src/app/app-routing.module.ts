@@ -65,11 +65,20 @@ import { TecnicoDeleteComponent } from './components/tecnico/tecnico-delete/tecn
 //Recebimento
 import { RecebimentoCreateComponent } from './components/recebimento/recebimento-create/recebimento-create.component';
 import { RecebimentoCrudComponent } from './views/recebimento-crud/recebimento-crud.component';
+import { RecebimentoUpdateComponent } from './components/recebimento/recebimento-update/recebimento-update.component';
+import { RecebimentoDeleteComponent } from './components/recebimento/recebimento-delete/recebimento-delete.component';
 
 //Amostra
 import { AmostraCrudComponent } from './views/amostra-crud/amostra-crud.component';
 import { AmostraCreateComponent } from './components/amostra/amostra-create/amostra-create.component';
 import { AmostraUpdateComponent } from './components/amostra/amostra-update/amostra-update.component';
+import { AmostraDeleteComponent } from './components/amostra/amostra-delete/amostra-delete.component';
+
+//Resultados de analise
+import { ResultadoAnaliseCrudComponent } from './views/resultado-analise-crud/resultado-analise-crud.component';
+import { ResultadoAnaliseCreateComponent } from './components/resultadoAnalise/resultado-analise-create/resultado-analise-create.component';
+import { ResultadoAnaliseUpdateComponent } from './components/resultadoAnalise/resultado-analise-update/resultado-analise-update.component';
+import { ResultadoAnaliseDeleteComponent } from './components/resultadoAnalise/resultado-analise-delete/resultado-analise-delete.component';
 
 const routes: Routes = [
   {
@@ -245,6 +254,14 @@ const routes: Routes = [
     component: RecebimentoCreateComponent
   },
   {
+    path: "recebimentos/update/:recId",
+    component: RecebimentoUpdateComponent
+  },
+  {
+    path: "recebimentos/delete/:recId",
+    component: RecebimentoDeleteComponent
+  },
+  {
     path: "amostras",
     component: AmostraCrudComponent
   },
@@ -253,8 +270,28 @@ const routes: Routes = [
     component: AmostraCreateComponent
   },
   {
-    path: "amostras/update/:id",
+    path: "amostras/update/:amoId",
     component: AmostraUpdateComponent
+  },
+  {
+    path: "amostras/delete/:amoId",
+    component: AmostraDeleteComponent
+  },
+  {
+    path: "ranalises",
+    component: ResultadoAnaliseCrudComponent
+  },
+  {
+    path: "ranalises/create",
+    component: ResultadoAnaliseCreateComponent
+  },
+  {
+    path: "ranalises/update/:resId",
+    component: ResultadoAnaliseUpdateComponent
+  },
+  {
+    path: "ranalises/delete/:resId",
+    component: ResultadoAnaliseDeleteComponent
   }
 ];
 

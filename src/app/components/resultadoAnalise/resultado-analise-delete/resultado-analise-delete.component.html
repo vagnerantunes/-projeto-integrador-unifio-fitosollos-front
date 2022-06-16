@@ -1,0 +1,24 @@
+<mat-card>
+    <mat-card-title>Excluir Resultado de Analise</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Valor" [value]="resultadoAnalise.resQtdOvos" name="resQtdOvos" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Valor" [value]="resultadoAnalise.resQtdRaiz" name="resQtdRaiz" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Valor" [value]="resultadoAnalise.resQtdSolo" name="resQtdSolo" disabled>
+        </mat-form-field>
+        
+    </form>
+
+    <button mat-raised-button (click)="deleteResultado()" color="warn">
+        Excluir
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+
+</mat-card>

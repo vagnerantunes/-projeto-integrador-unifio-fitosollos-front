@@ -18,18 +18,18 @@ import { Laboratorio } from '../../laboratorio/laboratorio.model';
 export class AmostraCreateComponent implements OnInit {
 
   amostra: Amostra = {
-    descricao: '',
-    chegada: new Date(),
-    saida: new Date(),
-    peso: 0,
-    finalizida: '',
-    cancelada: '',
-    usuario: 1,
-    analise: 1,
-    cultura: 1,
-    proprietario: 1,
-    tecnico: 1,
-    laboratorio: 1
+    amoDescricao: '',
+    amoChegada: new Date(),
+    amoSaida: new Date(),
+    amoPeso: 0,
+    amoFinalizada: '',
+    amoCancelada: '',
+    amoUsuario: 0,
+    amoAnalise: 0,
+    amoCultura: 0,
+    amoProprietario: 0,
+    amoTecnico: 0,
+    amoLaboratorio: 0
   }
 
   usuario!: Usuario[];

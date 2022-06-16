@@ -29,18 +29,18 @@ export class AmostraService {
     return this.http.get<Amostra[]>(this.baseUrl)
   }
 
-  readById(id: string): Observable<Amostra>{
-    const url = `${this.baseUrl}/${id}`
+  readById(amoId: string): Observable<Amostra>{
+    const url = `${this.baseUrl}/${amoId}`
     return this.http.get<Amostra>(url)
   }
  
   update(amostra: Amostra): Observable<Amostra>{
-    const url = `${this.baseUrl}/${amostra.id}`
+    const url = `${this.baseUrl}/${amostra.amoId}`
     return this.http.put<Amostra>(url, amostra)
   }
   
-  delete(id: number): Observable<Amostra>{    
-    const url = `${this.baseUrl}/${id}`
+  delete(amoId: number): Observable<Amostra>{    
+    const url = `${this.baseUrl}/${amoId}`
     return this.http.delete<Amostra>(url)
   }
 }  

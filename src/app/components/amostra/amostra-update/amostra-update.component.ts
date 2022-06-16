@@ -29,8 +29,8 @@ export class AmostraUpdateComponent implements OnInit {
   constructor(private amostraService: AmostraService, private dropdownService: DropdownService , private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id');
-    this.amostraService.readById(id!).subscribe(amostra => {
+    const amoId = this.route.snapshot.paramMap.get('amoId');
+    this.amostraService.readById(amoId!).subscribe(amostra => {
       this.amostra = amostra
     });
 
@@ -48,6 +48,10 @@ export class AmostraUpdateComponent implements OnInit {
 
     this.dropdownService.readProprietario().subscribe(dados => {
       this.proprietarios = dados;
+    })
+
+    this.dropdownService.readTecnico().subscribe(dados => {
+      this.tecnicos = dados;
     })
 
     this.dropdownService.readLaboratorio().subscribe(dados => {

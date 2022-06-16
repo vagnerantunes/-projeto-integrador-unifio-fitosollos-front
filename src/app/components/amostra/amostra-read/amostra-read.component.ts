@@ -10,7 +10,7 @@ import { Amostra } from '../amostra.model';
 export class AmostraReadComponent implements OnInit {
 
   amostras!: Amostra[]
-  displayedColumns = ['id', 'descricao', 'chegada', 'saida', 'peso', 'finalizada', 'cancelada', 'usuario', 'analise', 'cultura', 'proprietario', 'tecnico', 'laboratorio', 'acao']
+  displayedColumns = ['amoId', 'amoDescricao', 'amoChegada', 'amoSaida', 'amoPeso', 'amoFinalizada', 'amoCancelada', 'amoUsuario', 'amoAnalise', 'amoCultura', 'amoProprietario', 'amoTecnico', 'amoLaboratorio', 'acao']
 
   constructor(private amostraService: AmostraService) { }
 

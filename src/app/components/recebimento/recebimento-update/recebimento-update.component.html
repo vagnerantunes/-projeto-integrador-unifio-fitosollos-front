@@ -1,7 +1,6 @@
-
 <mat-card>
     <mat-card-header>
-        <mat-card-title>Novo Recebimento</mat-card-title>
+        <mat-card-title>Atualizar Recebimento</mat-card-title>
     </mat-card-header>
 
     <mat-card-content>
@@ -12,7 +11,7 @@
             </mat-form-field>
 
             <mat-form-field>
-                <input matInput placeholder="Data/hora Recebimento" [(ngModel)]="recebimento.recHorario" name="recHorario" type="text">
+                <input matInput placeholder="Horario" [(ngModel)]="recebimento.recHorario" name="recHorario" type="text">
             </mat-form-field>
 
             <mat-form-field>
@@ -28,9 +27,10 @@
                   <option *ngFor="let amostras of amostra" [value]="amostras.amoId">{{amostras.amoDescricao}}</option>
                 </select>
               </mat-form-field>
+              
         </form>
 
-        <button appGreen mat-raised-button (click)="createPreco()">Salvar</button>
+        <button appGreen mat-raised-button (click)="updateRecebimento()">Salvar</button>
         <button appRed mat-raised-button (click)="cancel()">Cancelar</button>
 
     </mat-card-content>

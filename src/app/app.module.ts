@@ -79,6 +79,15 @@ import { AmostraCrudComponent } from './views/amostra-crud/amostra-crud.componen
 import { AmostraCreateComponent } from './components/amostra/amostra-create/amostra-create.component';
 import { AmostraReadComponent } from './components/amostra/amostra-read/amostra-read.component';
 import { AmostraUpdateComponent } from './components/amostra/amostra-update/amostra-update.component';
+import { AmostraDeleteComponent } from './components/amostra/amostra-delete/amostra-delete.component';
+import { RecebimentoReadComponent } from './components/recebimento/recebimento-read/recebimento-read.component';
+import { RecebimentoUpdateComponent } from './components/recebimento/recebimento-update/recebimento-update.component';
+import { RecebimentoDeleteComponent } from './components/recebimento/recebimento-delete/recebimento-delete.component';
+import { ResultadoAnaliseCrudComponent } from './views/resultado-analise-crud/resultado-analise-crud.component';
+import { ResultadoAnaliseCreateComponent } from './components/resultadoAnalise/resultado-analise-create/resultado-analise-create.component';
+import { ResultadoAnaliseReadComponent } from './components/resultadoAnalise/resultado-analise-read/resultado-analise-read.component';
+import { ResultadoAnaliseUpdateComponent } from './components/resultadoAnalise/resultado-analise-update/resultado-analise-update.component';
+import { ResultadoAnaliseDeleteComponent } from './components/resultadoAnalise/resultado-analise-delete/resultado-analise-delete.component';
 
 
 
@@ -144,7 +153,16 @@ import { AmostraUpdateComponent } from './components/amostra/amostra-update/amos
     AmostraCrudComponent,
     AmostraCreateComponent,
     AmostraReadComponent,
-    AmostraUpdateComponent
+    AmostraUpdateComponent,
+    AmostraDeleteComponent,
+    RecebimentoReadComponent,
+    RecebimentoUpdateComponent,
+    RecebimentoDeleteComponent,
+    ResultadoAnaliseCrudComponent,
+    ResultadoAnaliseCreateComponent,
+    ResultadoAnaliseReadComponent,
+    ResultadoAnaliseUpdateComponent,
+    ResultadoAnaliseDeleteComponent
   ],
   imports: [
     BrowserModule,
