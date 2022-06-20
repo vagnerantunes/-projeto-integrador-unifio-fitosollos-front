@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/template/header/header.component';
 
 //modulos importados de material
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatIconModule} from '@angular/material/icon';
+import {MatMenuModule} from '@angular/material/menu';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
@@ -88,6 +91,9 @@ import { ResultadoAnaliseCreateComponent } from './components/resultadoAnalise/r
 import { ResultadoAnaliseReadComponent } from './components/resultadoAnalise/resultado-analise-read/resultado-analise-read.component';
 import { ResultadoAnaliseUpdateComponent } from './components/resultadoAnalise/resultado-analise-update/resultado-analise-update.component';
 import { ResultadoAnaliseDeleteComponent } from './components/resultadoAnalise/resultado-analise-delete/resultado-analise-delete.component';
+import { NavInicialComponent } from './components/template/nav-inicial/nav-inicial.component';
+import { NavAnaliseOperacoesComponent } from './components/template/nav-analise-operacoes/nav-analise-operacoes.component';
+
 
 
 
@@ -162,7 +168,9 @@ import { ResultadoAnaliseDeleteComponent } from './components/resultadoAnalise/r
     ResultadoAnaliseCreateComponent,
     ResultadoAnaliseReadComponent,
     ResultadoAnaliseUpdateComponent,
-    ResultadoAnaliseDeleteComponent
+    ResultadoAnaliseDeleteComponent,
+    NavInicialComponent,
+    NavAnaliseOperacoesComponent
   ],
   imports: [
     BrowserModule,
@@ -180,7 +188,11 @@ import { ResultadoAnaliseDeleteComponent } from './components/resultadoAnalise/r
     MatSortModule,
     MatTableModule,
     HttpClientModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatMenuModule,
+    MatIconModule,
+    MatExpansionModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

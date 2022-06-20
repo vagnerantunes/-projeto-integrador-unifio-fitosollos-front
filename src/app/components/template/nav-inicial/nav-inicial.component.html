@@ -1,0 +1,57 @@
+<mat-sidenav-container class="container">
+    <mat-sidenav class="sidenav" mode="side" opened fixedInViewport="true" fixedTopGap="64">
+        <mat-nav-list class="nav-list"><br>
+                        
+            <mat-expansion-panel hideToggle mat-list-item class="expansion">
+                <mat-expansion-panel-header>
+                    <i class="material-icons">
+                        science
+                    </i>
+                    <mat-panel-title class="titulo">
+                        <strong>Análise / Operações</strong>
+                    </mat-panel-title>                    
+                </mat-expansion-panel-header>
+                <a routerLink="/amostras">Amostras</a><br><br>
+                <a routerLink="/ranalises">Resutado de Análise</a>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel hideToggle mat-list-item class="expansion">
+                <mat-expansion-panel-header>
+                    <i class="material-icons">
+                        paid
+                    </i>
+                    <mat-panel-title class="titulo">
+                        <strong>Financeiro</strong>
+                    </mat-panel-title>                    
+                </mat-expansion-panel-header>
+                <a routerLink="/recebimentos">Recebimento</a><br><br>
+                <a routerLink="/precos">Tabela de preços</a><br><br>
+                <a routerLink="/pagamentos">Forma de pagamento</a>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel hideToggle mat-list-item class="expansion">
+                <mat-expansion-panel-header>
+                    <i class="material-icons">
+                        people
+                    </i>
+                    <mat-panel-title class="titulo">
+                        <strong>Cadastros</strong>
+                    </mat-panel-title>                    
+                </mat-expansion-panel-header>
+                <a routerLink="/usuarios">Usuários</a><br><br>
+                <a routerLink="/proprietarios">Proprietário</a><br><br>
+                <a routerLink="/crqs">CRQ</a><br><br>
+                <a routerLink="/culturas">Cultura</a><br><br>
+                <a routerLink="/nematoides">Nematoides</a><br><br>
+                <a routerLink="/analises">Tipo de análise</a><br><br>
+                <a routerLink="/tecnicos">Responsável técnico</a>
+            </mat-expansion-panel>
+
+
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content class="content">
+        <!-- usamos para começar a trabalhar com a navegação a partir do clique... -->
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
