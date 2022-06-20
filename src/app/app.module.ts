@@ -23,7 +23,6 @@ import {MatTableModule} from '@angular/material/table';
 import { HttpClientModule } from '@angular/common/http';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavComponent } from './components/template/nav/nav.component';
 import { HomeComponent } from './views/home/home.component';
 import { UsuariosCrudComponent } from './views/usuarios-crud/usuarios-crud.component';
 import { FooterComponent } from './components/template/footer/footer.component';
@@ -92,16 +91,11 @@ import { ResultadoAnaliseReadComponent } from './components/resultadoAnalise/res
 import { ResultadoAnaliseUpdateComponent } from './components/resultadoAnalise/resultado-analise-update/resultado-analise-update.component';
 import { ResultadoAnaliseDeleteComponent } from './components/resultadoAnalise/resultado-analise-delete/resultado-analise-delete.component';
 import { NavInicialComponent } from './components/template/nav-inicial/nav-inicial.component';
-import { NavAnaliseOperacoesComponent } from './components/template/nav-analise-operacoes/nav-analise-operacoes.component';
-
-
-
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    NavComponent,
     HomeComponent,
     UsuariosCrudComponent,
     FooterComponent,
@@ -169,8 +163,7 @@ import { NavAnaliseOperacoesComponent } from './components/template/nav-analise-
     ResultadoAnaliseReadComponent,
     ResultadoAnaliseUpdateComponent,
     ResultadoAnaliseDeleteComponent,
-    NavInicialComponent,
-    NavAnaliseOperacoesComponent
+    NavInicialComponent
   ],
   imports: [
     BrowserModule,
