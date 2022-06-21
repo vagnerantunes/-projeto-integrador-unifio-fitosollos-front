@@ -21,4 +21,5 @@ export class UsuarioReadComponent implements OnInit {
     })
   }
 
+
 }

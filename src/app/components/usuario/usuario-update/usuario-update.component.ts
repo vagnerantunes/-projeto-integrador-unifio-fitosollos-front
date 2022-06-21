@@ -12,13 +12,13 @@ export class UsuarioUpdateComponent implements OnInit {
 
   usuario!: Usuario;
 
-  constructor(private usuarioService: UsuarioService, 
-    private router: Router, 
-    private route: ActivatedRoute) {}
+  constructor(private usuarioService: UsuarioService,
+    private router: Router,
+    private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     const usuId = this.route.snapshot.paramMap.get('usuId')
-    this.usuarioService.readById(usuId!).subscribe((usuario: Usuario) =>{
+    this.usuarioService.readById(usuId!).subscribe((usuario: Usuario) => {
       this.usuario = usuario
     })
   }
@@ -32,6 +32,13 @@ export class UsuarioUpdateComponent implements OnInit {
 
   cancel(): void {
     this.router.navigate(['/usuarios'])
+  }
+
+  show: boolean = false;
+
+  // click event function toggle
+  password() {
+    this.show = !this.show;
   }
 
 }

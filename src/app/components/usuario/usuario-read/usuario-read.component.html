@@ -13,9 +13,10 @@
 
       <ng-container matColumnDef="usuSenha">
         <th mat-header-cell *matHeaderCellDef>Senha</th>
-        <td mat-cell *matCellDef="let row">{{row.usuSenha}}</td>
+        <td mat-cell *matCellDef="let row" style="-webkit-text-security: square">{{row.usuSenha}}</td>
       </ng-container>
 
+      <!-- style="-webkit-text-security: square"-->
       <ng-container matColumnDef="acao">
         <th mat-header-cell *matHeaderCellDef>Ações</th>                     
         <td mat-cell *matCellDef="let row">

@@ -9,3 +9,7 @@ table{
 .delete > i{
     color: #e35e6b;
 }
+
+.senha {
+    display: block;
+}

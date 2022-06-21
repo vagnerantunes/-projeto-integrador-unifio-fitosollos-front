@@ -5,15 +5,18 @@
             <input matInput placeholder="E-mail" [(ngModel)]="usuario.usuEmail" name="email">
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="Senha" [(ngModel)]="usuario.usuSenha" name="senha">
+            <input matInput placeholder="Senha" [type]="show ? 'text' : 'password'" [(ngModel)]="usuario.usuSenha" name="senha">            
         </mat-form-field>
+        
     </form>
+
+    <button mat-raised-button (click)="password()">{{show ? 'Esconder senha' : 'Visualizar senha'}}</button>
 
     <button mat-raised-button (click)="updateCargo()" color="primary">
         Atualizar
     </button>
     
-    <button mat-raised-button (click)="cancel()">
+    <button mat-raised-button (click)="cancel()" color="warn">
         Cancelar
     </button>
 
