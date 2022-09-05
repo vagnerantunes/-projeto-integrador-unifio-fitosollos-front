@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/template/header/header.component';
 
 //modulos importados de material
+import {MatNativeDateModule} from '@angular/material/core'
+import {MatDatepickerModule} from '@angular/material/datepicker'
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
@@ -16,7 +18,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import {MatSortModule} from '@angular/material/sort';
 import {MatTableModule} from '@angular/material/table';
@@ -91,6 +93,13 @@ import { ResultadoAnaliseReadComponent } from './components/resultadoAnalise/res
 import { ResultadoAnaliseUpdateComponent } from './components/resultadoAnalise/resultado-analise-update/resultado-analise-update.component';
 import { ResultadoAnaliseDeleteComponent } from './components/resultadoAnalise/resultado-analise-delete/resultado-analise-delete.component';
 import { NavInicialComponent } from './components/template/nav-inicial/nav-inicial.component';
+import { AmostraDateComponent } from './components/amostra/amostra-date/amostra-date.component';
+import { CreateAccountComponent } from './components/template/login-auth/account/create-account/create-account.component';
+import { AuthenticationComponent } from './components/template/login-auth/layout/authentication/authentication.component';
+
+import { LoginComponent } from './components/template/login-auth/account/login/login.component';
+import { RedirecionarComponent } from './components/template/login-auth/redirecionar/redirecionar.component';
+
 
 @NgModule({
   declarations: [
@@ -163,7 +172,12 @@ import { NavInicialComponent } from './components/template/nav-inicial/nav-inici
     ResultadoAnaliseReadComponent,
     ResultadoAnaliseUpdateComponent,
     ResultadoAnaliseDeleteComponent,
-    NavInicialComponent
+    NavInicialComponent,
+    AmostraDateComponent,
+    CreateAccountComponent,
+    AuthenticationComponent,
+    LoginComponent,
+    RedirecionarComponent
   ],
   imports: [
     BrowserModule,
@@ -184,8 +198,10 @@ import { NavInicialComponent } from './components/template/nav-inicial/nav-inici
     MatPaginatorModule,
     MatMenuModule,
     MatIconModule,
-    MatExpansionModule
-    
+    MatExpansionModule,
+    MatDatepickerModule,
+    ReactiveFormsModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]

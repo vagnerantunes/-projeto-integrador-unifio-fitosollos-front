@@ -9,7 +9,7 @@ import { Proprietario } from './proprietario.model';
 })
 export class ProprietarioService {
 
-  baseUrl = "http://localhost:8080/proprietarios"
+  baseUrl = "http://backendjavafitosollos-env-1.eba-v4k2bhmp.us-east-1.elasticbeanstalk.com/proprietarios"
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
 

@@ -9,7 +9,7 @@ import { TipoAnalise } from './TipoAnalise.model';
 })
 export class AnaliseService {
 
-  baseUrl = "http://localhost:8080/analises"
+  baseUrl = "http://backendjavafitosollos-env-1.eba-v4k2bhmp.us-east-1.elasticbeanstalk.com/analises"
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
 

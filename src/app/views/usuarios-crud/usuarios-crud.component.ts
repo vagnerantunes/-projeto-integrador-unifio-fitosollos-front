@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-usuarios-crud',
   templateUrl: './usuarios-crud.component.html',

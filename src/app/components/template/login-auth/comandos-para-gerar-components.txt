@@ -1,0 +1,6 @@
+ng g c components/template/login-auth/account/login
+ng g c components/template/login-auth/account/create-account
+ng g s components/template/login-auth/account/shared/account
+ng g guard components/template/login-auth/account/shared/auth
+ng g c components/template/login-auth/layout/home
+ng g c components/template/login-auth/layout/authentication

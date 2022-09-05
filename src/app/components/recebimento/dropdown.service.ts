@@ -12,7 +12,7 @@ export class DropdownService {
 
   baseUrlFPagamento = "http://localhost:8080/fpagamentos";
 
-  baseUrlAmostra = "http://localhost:8080/amostras";
+  baseUrlAmostra = "http://backendjavafitosollos-env-1.eba-v4k2bhmp.us-east-1.elasticbeanstalk.com/amostras";
 
   constructor(private http: HttpClient) { }
 

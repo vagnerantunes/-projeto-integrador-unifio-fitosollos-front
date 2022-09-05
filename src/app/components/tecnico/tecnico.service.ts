@@ -9,7 +9,7 @@ import { ResponsavelTecnico } from './ResponsavelTecnico.model';
 })
 export class TecnicoService {
 
-  baseUrl = "http://localhost:8080/tecnicos"
+  baseUrl = "http://backendjavafitosollos-env-1.eba-v4k2bhmp.us-east-1.elasticbeanstalk.com/tecnicos"
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
 

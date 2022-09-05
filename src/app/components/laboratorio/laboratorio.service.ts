@@ -9,7 +9,7 @@ import { Laboratorio } from './laboratorio.model';
 })
 export class LaboratorioService {
 
-  baseUrl = "http://localhost:8080/laboratorios"
+  baseUrl = "http://backendjavafitosollos-env-1.eba-v4k2bhmp.us-east-1.elasticbeanstalk.com/laboratorios"
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
 

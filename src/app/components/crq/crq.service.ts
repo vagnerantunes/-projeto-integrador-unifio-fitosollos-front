@@ -9,7 +9,8 @@ import { Crq } from './crq.model';
 })
 export class CrqService {
 
-  baseUrl = "http://localhost:8080/crqs"
+  baseUrl = "http://backendjavafitosollos-env-1.eba-v4k2bhmp.us-east-1.elasticbeanstalk.com/crqs"
+  
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
 

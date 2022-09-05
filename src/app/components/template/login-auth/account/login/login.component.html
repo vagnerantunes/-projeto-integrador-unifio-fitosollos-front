@@ -1,0 +1,36 @@
+<div class="center-content">
+  <mat-card class="example-card">
+    <mat-card-title class="text-center">Entrar</mat-card-title>
+
+    <mat-card-content>
+      <form (ngSubmit)="onSubmit()" #form="ngForm">
+
+        <mat-form-field>
+          <div class="form-group" class="example-full-width">
+
+            <input class="form-control" type="email" name="email" id="email" [(ngModel)]="login.email" matInput
+              placeholder="Usuário" required />
+          </div>
+
+        </mat-form-field>
+
+        <mat-form-field>
+          <div class="form-group" class="example-full-width">
+
+            <input class="form-control" type="password" name="password" id="password" matInput placeholder="Senha"
+              [(ngModel)]="login.password" required />
+          </div>
+        </mat-form-field>
+
+        <div class="button">
+          <button class="button" type="submit" [disabled]="form.form.invalid" mat-button>Entrar</button>
+        </div>
+        <!--
+      <div class="button">
+        <button type="submit" mat-button [routerLink]="['/create-account']">Criar conta</button>
+      </div>
+      -->
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

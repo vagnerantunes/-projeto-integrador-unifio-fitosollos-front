@@ -1,0 +1,33 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Nova Amostra</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+
+        <form action="">
+            <mat-form-field appearance="fill" class="example-form-field">
+                <input matInput placeholder="Descrição" [(ngModel)]="amostra.amoDescricao" name="amoDescricao"
+                    type="text">
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="example-form-field">
+                <mat-label>Data chegada</mat-label>
+                <input matInput [matDatepicker]="datepicker">
+                <mat-hint>MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matSuffix [for]="datepicker"></mat-datepicker-toggle>
+                <mat-datepicker #datepicker>
+                    <mat-datepicker-actions>
+                      <button mat-button matDatepickerCancel>Cancel</button>
+                      <button mat-raised-button color="primary" matDatepickerApply>Apply</button>
+                    </mat-datepicker-actions>
+                  </mat-datepicker>
+            </mat-form-field>
+
+        </form>
+
+        <button appGreen mat-raised-button (click)="createAmostra()">Salvar</button>
+        <button appRed mat-raised-button (click)="cancel()">Cancelar</button>
+
+    </mat-card-content>
+
+</mat-card>

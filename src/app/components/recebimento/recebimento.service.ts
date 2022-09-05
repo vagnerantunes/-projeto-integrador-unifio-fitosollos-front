@@ -9,7 +9,7 @@ import { Recebimento } from './recebiment.model';
 })
 export class RecebimentoService {
 
-  baseUrl = "http://localhost:8080/recebimentos"
+  baseUrl = "http://backendjavafitosollos-env-1.eba-v4k2bhmp.us-east-1.elasticbeanstalk.com/recebimentos"
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
 

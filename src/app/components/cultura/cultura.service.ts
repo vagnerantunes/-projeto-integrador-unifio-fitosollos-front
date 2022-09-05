@@ -9,7 +9,7 @@ import { Cultura } from './cultura.model';
 })
 export class CulturaService {
 
-  baseUrl = "http://localhost:8080/culturas"
+  baseUrl = "http://backendjavafitosollos-env-1.eba-v4k2bhmp.us-east-1.elasticbeanstalk.com/culturas"
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
 

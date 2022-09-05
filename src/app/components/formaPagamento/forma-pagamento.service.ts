@@ -9,7 +9,7 @@ import { FormaPagamento } from './formaPagamento.model';
 })
 export class FormaPagamentoService {
 
-  baseUrl = "http://localhost:8080/fpagamentos"
+  baseUrl = "http://backendjavafitosollos-env-1.eba-v4k2bhmp.us-east-1.elasticbeanstalk.com/fpagamentos"
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
 

@@ -1,4 +1,3 @@
-
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './views/home/home.component';
@@ -81,221 +80,244 @@ import { ResultadoAnaliseCreateComponent } from './components/resultadoAnalise/r
 import { ResultadoAnaliseUpdateComponent } from './components/resultadoAnalise/resultado-analise-update/resultado-analise-update.component';
 import { ResultadoAnaliseDeleteComponent } from './components/resultadoAnalise/resultado-analise-delete/resultado-analise-delete.component';
 
+import { AmostraDateComponent } from './components/amostra/amostra-date/amostra-date.component';
+
+//login e autenticacao
+import { AuthenticationComponent } from './components/template/login-auth/layout/authentication/authentication.component';
+import { CreateAccountComponent } from './components/template/login-auth/account/create-account/create-account.component';
+import { LoginComponent } from './components/template/login-auth/account/login/login.component';
+import { AuthGuard } from './components/template/login-auth/account/shared/auth.guard';
+import { RedirecionarComponent } from './components/template/login-auth/redirecionar/redirecionar.component';
+
 const routes: Routes = [
   {
-    path: "",
-    component: HomeComponent
+    path: '',
+    component: RedirecionarComponent,
+    children: [
+      {
+        path: "",
+        component: HomeComponent
+      },
+      {
+        path: "usuarios",
+        component: UsuariosCrudComponent
+      },
+      {
+        path: "usuarios/create",
+        component: UsuarioCreateComponent
+      },
+      {
+        path: "usuarios/update/:usuId",
+        component: UsuarioUpdateComponent
+      },
+      {
+        path: "usuarios/delete/:usuId",
+        component: UsuarioDeleteComponent
+      },
+      {
+        path: "proprietarios",
+        component: ProprieraiosCrudComponent
+      },
+      {
+        path: "proprietarios/create",
+        component: ProprietarioCreateComponent
+      },
+      {
+        path: "proprietarios/update/:proId",
+        component: ProprietarioUpdateComponent
+      },
+      {
+        path: "proprietarios/delete/:proId",
+        component: ProprietarioDeleteComponent
+      },
+      {
+        path: "crqs",
+        component: CrqCrudComponent
+      },
+      {
+        path: "crqs/create",
+        component: CrqCreateComponent
+      },
+      {
+        path: "crqs/update/:crqId",
+        component: CrqUpdateComponent
+      },
+      {
+        path: "crqs/delete/:crqId",
+        component: CrqDeleteComponent
+      },
+      {
+        path: "culturas",
+        component: CulturaCrudComponent
+      },
+      {
+        path: "culturas/create",
+        component: CulturaCreateComponent
+      },
+      {
+        path: "culturas/update/:culId",
+        component: CulturaUpdateComponent
+      },
+      {
+        path: "culturas/delete/:culId",
+        component: CulturaDeleteComponent
+      },
+      {
+        path: "pagamentos",
+        component: FormaPagamentoCrudComponent
+      },
+      {
+        path: "pagamentos/create",
+        component: FormaPagamentoCreateComponent
+      },
+      {
+        path: "pagamentos/update/:fpgId",
+        component: FormaPagamentoUpdateComponent
+      },
+      {
+        path: "pagamentos/delete/:fpgId",
+        component: FormaPagamentoDeleteComponent
+      },
+      {
+        path: "laboratorios",
+        component: LaboratorioCrudComponent
+      },
+      {
+        path: "laboratorios/create",
+        component: LaboratorioCreateComponent
+      },
+      {
+        path: "laboratorios/update/:labId",
+        component: LaboratorioUpdateComponent
+      },
+      {
+        path: "laboratorios/delete/:labId",
+        component: LaboratorioDeleteComponent
+      },
+      {
+        path: "nematoides",
+        component: NematoideCrudComponent
+      },
+      {
+        path: "nematoides/create",
+        component: NematoideCreateComponent
+      },
+      {
+        path: "nematoides/update/:nemId",
+        component: NematoideUpdateComponent
+      },
+      {
+        path: "nematoides/delete/:nemId",
+        component: NematoideDeleteComponent
+      },
+      {
+        path: "analises",
+        component: TipoAnaliseCrudComponent
+      },
+      {
+        path: "analises/create",
+        component: AnaliseCreateComponent
+      },
+      {
+        path: "analises/update/:tipId",
+        component: AnaliseUpdateComponent
+      },
+      {
+        path: "analises/delete/:tipId",
+        component: AnaliseDeleteComponent
+      },
+      {
+        path: "precos",
+        component: PrecosCrudComponent
+      },
+      {
+        path: "precos/create",
+        component: PrecosCreateComponent
+      },
+      {
+        path: "precos/update/:tabId",
+        component: PrecosUpdateComponent
+      },
+      {
+        path: "precos/delete/:tabId",
+        component: PrecosDeleteComponent
+      },
+      {
+        path: "tecnicos",
+        component: TecnicoCrudComponent
+      },
+      {
+        path: "tecnicos/create",
+        component: TecnicoCreateComponent
+      },
+      {
+        path: "tecnicos/update/:tecId",
+        component: TecnicoUpdateComponent
+      },
+      {
+        path: "tecnicos/delete/:tecId",
+        component: TecnicoDeleteComponent
+      },
+      {
+        path: "recebimentos",
+        component: RecebimentoCrudComponent
+      },
+      {
+        path: "recebimentos/create",
+        component: RecebimentoCreateComponent
+      },
+      {
+        path: "recebimentos/update/:recId",
+        component: RecebimentoUpdateComponent
+      },
+      {
+        path: "recebimentos/delete/:recId",
+        component: RecebimentoDeleteComponent
+      },
+      {
+        path: "amostras",
+        component: AmostraCrudComponent
+      },
+      {
+        path: "amostras/create",
+        component: AmostraCreateComponent
+      },
+      {
+        path: "amostras/update/:amoId",
+        component: AmostraUpdateComponent
+      },
+      {
+        path: "amostras/delete/:amoId",
+        component: AmostraDeleteComponent
+      },
+      {
+        path: "ranalises",
+        component: ResultadoAnaliseCrudComponent
+      },
+      {
+        path: "ranalises/create",
+        component: ResultadoAnaliseCreateComponent
+      },
+      {
+        path: "ranalises/update/:resId",
+        component: ResultadoAnaliseUpdateComponent
+      },
+      {
+        path: "ranalises/delete/:resId",
+        component: ResultadoAnaliseDeleteComponent
+      }
+    ],
+    canActivate: [AuthGuard]
   },
   {
-    path: "usuarios",
-    component: UsuariosCrudComponent
-  },
-  {
-    path: "usuarios/create",
-    component: UsuarioCreateComponent
-  },
-  {
-    path: "usuarios/update/:usuId",
-    component: UsuarioUpdateComponent
-  },
-  {
-    path: "usuarios/delete/:usuId",
-    component: UsuarioDeleteComponent
-  },
-  {
-    path: "proprietarios",
-    component: ProprieraiosCrudComponent
-  },
-  {
-    path: "proprietarios/create",
-    component: ProprietarioCreateComponent
-  },
-  {
-    path: "proprietarios/update/:proId",
-    component: ProprietarioUpdateComponent
-  },
-  {
-    path: "proprietarios/delete/:proId",
-    component: ProprietarioDeleteComponent
-  },
-  {
-    path: "crqs",
-    component: CrqCrudComponent
-  },
-  {
-    path: "crqs/create",
-    component: CrqCreateComponent
-  },
-  {
-    path: "crqs/update/:crqId",
-    component: CrqUpdateComponent
-  },
-  {
-    path: "crqs/delete/:crqId",
-    component: CrqDeleteComponent
-  },
-  {
-    path: "culturas",
-    component: CulturaCrudComponent
-  },
-  {
-    path: "culturas/create",
-    component: CulturaCreateComponent
-  },
-  {
-    path: "culturas/update/:culId",
-    component: CulturaUpdateComponent
-  },
-  {
-    path: "culturas/delete/:culId",
-    component: CulturaDeleteComponent
-  },
-  {
-    path: "pagamentos",
-    component: FormaPagamentoCrudComponent
-  },
-  {
-    path: "pagamentos/create",
-    component: FormaPagamentoCreateComponent
-  },
-  {
-    path: "pagamentos/update/:fpgId",
-    component: FormaPagamentoUpdateComponent
-  },
-  {
-    path: "pagamentos/delete/:fpgId",
-    component: FormaPagamentoDeleteComponent
-  },
-  {
-    path: "laboratorios",
-    component: LaboratorioCrudComponent
-  },
-  {
-    path: "laboratorios/create",
-    component: LaboratorioCreateComponent
-  },
-  {
-    path: "laboratorios/update/:labId",
-    component: LaboratorioUpdateComponent
-  },
-  {
-    path: "laboratorios/delete/:labId",
-    component: LaboratorioDeleteComponent
-  },
-  {
-    path: "nematoides",
-    component: NematoideCrudComponent
-  },
-  {
-    path: "nematoides/create",
-    component: NematoideCreateComponent
-  },
-  {
-    path: "nematoides/update/:nemId",
-    component: NematoideUpdateComponent
-  },
-  {
-    path: "nematoides/delete/:nemId",
-    component: NematoideDeleteComponent
-  },
-  {
-    path: "analises",
-    component: TipoAnaliseCrudComponent
-  },
-  {
-    path: "analises/create",
-    component: AnaliseCreateComponent
-  },
-  {
-    path: "analises/update/:tipId",
-    component: AnaliseUpdateComponent
-  },
-  {
-    path: "analises/delete/:tipId",
-    component: AnaliseDeleteComponent
-  },
-  {
-    path: "precos",
-    component: PrecosCrudComponent
-  },
-  {
-    path: "precos/create",
-    component: PrecosCreateComponent
-  },
-  {
-    path: "precos/update/:tabId",
-    component: PrecosUpdateComponent
-  },
-  {
-    path: "precos/delete/:tabId",
-    component: PrecosDeleteComponent
-  },
-  {
-    path: "tecnicos",
-    component: TecnicoCrudComponent
-  },
-  {
-    path: "tecnicos/create",
-    component: TecnicoCreateComponent
-  },
-  {
-    path: "tecnicos/update/:tecId",
-    component: TecnicoUpdateComponent
-  },
-  {
-    path: "tecnicos/delete/:tecId",
-    component: TecnicoDeleteComponent
-  },
-  {
-    path: "recebimentos",
-    component: RecebimentoCrudComponent
-  },
-  {
-    path: "recebimentos/create",
-    component: RecebimentoCreateComponent
-  },
-  {
-    path: "recebimentos/update/:recId",
-    component: RecebimentoUpdateComponent
-  },
-  {
-    path: "recebimentos/delete/:recId",
-    component: RecebimentoDeleteComponent
-  },
-  {
-    path: "amostras",
-    component: AmostraCrudComponent
-  },
-  {
-    path: "amostras/create",
-    component: AmostraCreateComponent
-  },
-  {
-    path: "amostras/update/:amoId",
-    component: AmostraUpdateComponent
-  },
-  {
-    path: "amostras/delete/:amoId",
-    component: AmostraDeleteComponent
-  },
-  {
-    path: "ranalises",
-    component: ResultadoAnaliseCrudComponent
-  },
-  {
-    path: "ranalises/create",
-    component: ResultadoAnaliseCreateComponent
-  },
-  {
-    path: "ranalises/update/:resId",
-    component: ResultadoAnaliseUpdateComponent
-  },
-  {
-    path: "ranalises/delete/:resId",
-    component: ResultadoAnaliseDeleteComponent
-  }
-
-  
+    path: '',
+    component: AuthenticationComponent,
+    children: [
+      { path: '', redirectTo: 'login', pathMatch: 'full' },
+      { path: 'login', component: LoginComponent },
+      { path: 'create-account', component: CreateAccountComponent }
+    ]
+  }  
 ];
 
 @NgModule({

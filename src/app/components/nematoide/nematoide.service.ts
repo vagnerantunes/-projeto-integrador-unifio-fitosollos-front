@@ -9,7 +9,7 @@ import { Nematoide } from './nematoide.model';
 })
 export class NematoideService {
 
-  baseUrl = "http://localhost:8080/nematoides"
+  baseUrl = "http://backendjavafitosollos-env-1.eba-v4k2bhmp.us-east-1.elasticbeanstalk.com/nematoides"
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
 

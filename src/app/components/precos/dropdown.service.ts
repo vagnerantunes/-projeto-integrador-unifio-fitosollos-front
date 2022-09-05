@@ -9,9 +9,9 @@ import { Laboratorio } from '../laboratorio/laboratorio.model';
 })
 export class DropdownService {
 
-  baseUrlAnalise = "http://localhost:8080/analises";
+  baseUrlAnalise = "http://backendjavafitosollos-env-1.eba-v4k2bhmp.us-east-1.elasticbeanstalk.com/analises";
 
-  baseUrlLaboratorio = "http://localhost:8080/laboratorios";
+  baseUrlLaboratorio = "http://backendjavafitosollos-env-1.eba-v4k2bhmp.us-east-1.elasticbeanstalk.com/laboratorios";
 
 
   constructor(private http: HttpClient) { }

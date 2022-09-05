@@ -9,7 +9,11 @@ import { Usuario } from './usuario.model';
 })
 export class UsuarioService {
 
-  baseUrl = "http://localhost:8080/usuarios"  
+  //url local
+  //baseUrl = "http://localhost:8080/usuarios"  
+
+  //url aws
+  baseUrl = "http://backendjavafitosollos-env-1.eba-v4k2bhmp.us-east-1.elasticbeanstalk.com/usuarios"
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
 

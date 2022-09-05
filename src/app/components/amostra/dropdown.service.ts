@@ -13,17 +13,17 @@ import { Laboratorio } from '../laboratorio/laboratorio.model';
 })
 export class DropdownService {
 
-  baseUrlUsuario = "http://localhost:8080/usuarios";
+  baseUrlUsuario = "http://backendjavafitosollos-env-1.eba-v4k2bhmp.us-east-1.elasticbeanstalk.com/usuarios";
 
-  baseUrlAnalise = "http://localhost:8080/analises";
+  baseUrlAnalise = "http://backendjavafitosollos-env-1.eba-v4k2bhmp.us-east-1.elasticbeanstalk.com/analises";
 
-  baseUrlCultura = "http://localhost:8080/culturas";
+  baseUrlCultura = "http://backendjavafitosollos-env-1.eba-v4k2bhmp.us-east-1.elasticbeanstalk.com/culturas";
 
-  baseUrlProprietario = "http://localhost:8080/proprietarios";
+  baseUrlProprietario = "http://backendjavafitosollos-env-1.eba-v4k2bhmp.us-east-1.elasticbeanstalk.com/proprietarios";
 
-  baseUrlTecnico = "http://localhost:8080/tecnicos";  
+  baseUrlTecnico = "http://backendjavafitosollos-env-1.eba-v4k2bhmp.us-east-1.elasticbeanstalk.com/tecnicos";  
 
-  baseUrlLaboratorio = "http://localhost:8080/laboratorios";
+  baseUrlLaboratorio = "http://backendjavafitosollos-env-1.eba-v4k2bhmp.us-east-1.elasticbeanstalk.com/laboratorios";
 
   constructor(private http: HttpClient) { }
 

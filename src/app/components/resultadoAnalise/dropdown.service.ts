@@ -9,9 +9,9 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DropdownService {
 
-  baseUrlNematoide = "http://localhost:8080/nematoides";
+  baseUrlNematoide = "http://backendjavafitosollos-env-1.eba-v4k2bhmp.us-east-1.elasticbeanstalk.com/nematoides";
 
-  baseUrlAmostra = "http://localhost:8080/amostras";
+  baseUrlAmostra = "http://backendjavafitosollos-env-1.eba-v4k2bhmp.us-east-1.elasticbeanstalk.com/amostras";
 
 
   constructor(private http: HttpClient) { }

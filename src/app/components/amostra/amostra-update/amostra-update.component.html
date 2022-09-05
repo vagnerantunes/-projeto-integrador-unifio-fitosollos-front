@@ -1,81 +1,83 @@
 <mat-card>
-    <mat-card-header>
-        <mat-card-title>Atualizar Amostra</mat-card-title>
-    </mat-card-header>
+  <mat-card-header>
+    <mat-card-title>Atualizar Amostra</mat-card-title>
+  </mat-card-header>
 
-    <mat-card-content>
-        
-        <form action="">
-            <mat-form-field>
-                <input matInput placeholder="Descricao" [(ngModel)]="amostra.amoDescricao" name="amoDescricao" type="text">
-            </mat-form-field>
+  <mat-card-content>
 
-            <mat-form-field>
-                <input matInput placeholder="Chegada" [(ngModel)]="amostra.amoChegada" name="amoChegada" type="text">
-            </mat-form-field>
+    <form action="">
+      <mat-form-field appearance="fill" class="example-form-field">
+        <input matInput placeholder="Descricao" [(ngModel)]="amostra.amoDescricao" name="amoDescricao" type="text">
+      </mat-form-field>
 
-            <mat-form-field>
-                <input matInput placeholder="Saida" [(ngModel)]="amostra.amoSaida" name="amoSaida" type="text">
-            </mat-form-field>
+      <mat-form-field appearance="fill" class="example-form-field">
+        <input matInput placeholder="Chegada" [(ngModel)]="amostra.amoChegada" name="amoChegada" type="text">
+      </mat-form-field>
 
-            <mat-form-field>
-                <input matInput placeholder="Peso" [(ngModel)]="amostra.amoPeso" name="amoPeso" type="number">
-            </mat-form-field>
+      <mat-form-field appearance="fill" class="example-form-field">
+        <input matInput placeholder="Saida" [(ngModel)]="amostra.amoSaida" name="amoSaida" type="text">
+      </mat-form-field>
 
-            <mat-form-field>
-                <input matInput placeholder="Finalizada" [(ngModel)]="amostra.amoFinalizada" name="amoFinalizada" type="text">
-            </mat-form-field>
+      <mat-form-field appearance="fill" class="example-form-field">
+        <input matInput placeholder="Peso" [(ngModel)]="amostra.amoPeso" name="amoPeso" type="number">
+      </mat-form-field>
 
-            <mat-form-field>
-                <input matInput placeholder="Cancelada" [(ngModel)]="amostra.amoCancelada" name="amoCancelada" type="text">
-            </mat-form-field>
+      <mat-form-field appearance="fill" class="example-form-field">
+        <input matInput placeholder="Finalizada" [(ngModel)]="amostra.amoFinalizada" name="amoFinalizada" type="text">
+      </mat-form-field>
 
-            <mat-form-field>
-                <mat-label>Usuário</mat-label>
-                <select matNativeControl required [(ngModel)]="amostra.amoUsuario" name="amoUsuario">
-                    <option *ngFor="let usuario of usuarios" [value]="usuario.usuId">{{ usuario.usuEmail }}</option>
-                </select>
-            </mat-form-field>
+      <mat-form-field appearance="fill" class="example-form-field">
+        <input matInput placeholder="Cancelada" [(ngModel)]="amostra.amoCancelada" name="amoCancelada" type="text">
+      </mat-form-field>
 
-              <mat-form-field>
-                <mat-label>Tipo de Analise</mat-label>
-                <select matNativeControl required [(ngModel)]="amostra.amoAnalise" name="amoAnalise">
-                  <option *ngFor="let analise of analises" [value]="analise.tipId">{{analise.tipDescricao}}</option>
-                </select>
-              </mat-form-field>
+      <mat-form-field appearance="fill" class="example-form-field">
+        <mat-label>Usuário</mat-label>
+        <select matNativeControl required [(ngModel)]="amostra.amoUsuario" name="amoUsuario">
+          <option *ngFor="let usuario of usuarios" [value]="usuario.usuId">{{ usuario.usuEmail }}</option>
+        </select>
+      </mat-form-field>
 
-              <mat-form-field>
-                <mat-label>Cultura</mat-label>
-                <select matNativeControl required [(ngModel)]="amostra.amoCultura" name="amoCultura">
-                  <option *ngFor="let cultura of culturas" [value]="cultura.culId">{{cultura.culDecricao}}</option>
-                </select>
-              </mat-form-field>
+      <mat-form-field appearance="fill" class="example-form-field">
+        <mat-label>Tipo de Analise</mat-label>
+        <select matNativeControl required [(ngModel)]="amostra.amoAnalise" name="amoAnalise">
+          <option *ngFor="let analise of analises" [value]="analise.tipId">{{analise.tipDescricao}}</option>
+        </select>
+      </mat-form-field>
 
-              <mat-form-field>
-                <mat-label>Proprietário</mat-label>
-                <select matNativeControl required [(ngModel)]="amostra.amoProprietario" name="amoProprietario">
-                  <option *ngFor="let proprietario of proprietarios" [value]="proprietario.proId">{{proprietario.proNome}}</option>
-                </select>
-              </mat-form-field>
+      <mat-form-field appearance="fill" class="example-form-field">
+        <mat-label>Cultura</mat-label>
+        <select matNativeControl required [(ngModel)]="amostra.amoCultura" name="amoCultura">
+          <option *ngFor="let cultura of culturas" [value]="cultura.culId">{{cultura.culDecricao}}</option>
+        </select>
+      </mat-form-field>
 
-              <mat-form-field>
-                <mat-label>Tecnico</mat-label>
-                <select matNativeControl required [(ngModel)]="amostra.amoTecnico" name="amoTecnico">
-                  <option *ngFor="let tecnico tecnicos" [value]="tecnico.tecId">{{tecnico.tecNome}}</option>
-                </select>
-              </mat-form-field>
+      <mat-form-field appearance="fill" class="example-form-field">
+        <mat-label>Proprietário</mat-label>
+        <select matNativeControl required [(ngModel)]="amostra.amoProprietario" name="amoProprietario">
+          <option *ngFor="let proprietario of proprietarios" [value]="proprietario.proId">{{proprietario.proNome}}
+          </option>
+        </select>
+      </mat-form-field>
 
-              <mat-form-field>
-                <mat-label>Laboratório</mat-label>
-                <select matNativeControl required [(ngModel)]="amostra.amoLaboratorio" name="amoLaboratorio">
-                  <option *ngFor="let laboratorio of laboratorios" [value]="laboratorio.labId">{{laboratorio.labNomeFantasia}}</option>
-                </select>
-              </mat-form-field>
-        </form>
+      <mat-form-field appearance="fill" class="example-form-field">
+        <mat-label>Tecnico</mat-label>
+        <select matNativeControl required [(ngModel)]="amostra.amoTecnico" name="amoTecnico">
+          <option *ngFor="let tecnico tecnicos" [value]="tecnico.tecId">{{tecnico.tecNome}}</option>
+        </select>
+      </mat-form-field>
 
-        <button appGreen mat-raised-button (click)="updateAmostra()">Salvar</button>
-        <button appRed mat-raised-button (click)="cancel()">Cancelar</button>
+      <mat-form-field appearance="fill" class="example-form-field">
+        <mat-label>Laboratório</mat-label>
+        <select matNativeControl required [(ngModel)]="amostra.amoLaboratorio" name="amoLaboratorio">
+          <option *ngFor="let laboratorio of laboratorios" [value]="laboratorio.labId">{{laboratorio.labNomeFantasia}}
+          </option>
+        </select>
+      </mat-form-field>
+    </form>
 
-    </mat-card-content>
-    
+    <button appGreen mat-raised-button (click)="updateAmostra()">Salvar</button>
+    <button appRed mat-raised-button (click)="cancel()">Cancelar</button>
+
+  </mat-card-content>
+
 </mat-card>
